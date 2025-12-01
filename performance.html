@@ -10,6 +10,7 @@
     <style>
         body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #eef4fb; color: #1f2a44; }
 
+        /* Menu */
         .menu {
             width: 100%;
             background: #dce9f8;
@@ -24,17 +25,25 @@
             color: #1f2a44;
             font-size: 18px;
         }
-        .menu a:hover { color: #3da2ff; }
+        .menu a:hover {
+            color: #3da2ff;
+        }
+
+        .hero { text-align: center; padding: 80px 20px 100px; background: #e9f3ff; }
+        .hero img { width: 180px; margin-bottom: 20px; }
+        h1 { font-size: 42px; color: #1f2a44; }
+        h2 { font-size: 26px; color: #2b3e64; margin-top: 40px; }
 
         .content {
             max-width: 900px;
-            margin: 60px auto;
-            padding: 30px 25px 60px;
+            margin: 60px auto 120px;
+            padding: 20px 20px 80px;
             background: #ffffff;
             border-radius: 10px;
             border: 1px solid #cfd7e6;
         }
-            .buy-button {
+
+        .buy-button {
             background: #3da2ff;
             color: white;
             padding: 16px 28px;
@@ -46,22 +55,13 @@
             margin-top: 20px;
         }
         .buy-button:hover { background: #1b7ed4; }
-        .hero { text-align: center; padding: 80px 20px 100px; background: #e9f3ff; }
-        .hero img { width: 360px; margin-bottom: 20px; }
-        
-        h1 { font-size: 36px; color: #1f2a44; text-align: center; }
-        h2 { font-size: 26px; color: #2b3e64; margin-top: 40px; }
-        p { line-height: 1.6; }
 
-        .screenshot {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .screenshot img {
-            width: 100%;
-            max-width: 780px;
-            border-radius: 10px;
+        .offer-box {
+            background: white;
             border: 1px solid #cfd7e6;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 40px;
         }
 
         footer {
