@@ -1,387 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dental Legal Advice & Law UK | Dental Negligence, Claims & Compliance</title>
-  <meta name="description" content="UK dental legal hub covering dental negligence claims, GDC investigations, dental indemnity, employment law, contracts and compliance for dentists and dental practices." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dental Legal Hub – DentalLab.co.uk</title>
+<meta name="description" content="DentalLab.co.uk provides expert guidance on dental legal issues, including negligence, indemnity, employment, and regulatory compliance for UK dentists.">
+<meta name="keywords" content="dental legal, dental negligence, GDC investigations, dental indemnity, employment law, regulatory compliance, UK dentists, dental law guidance">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Dental Legal Advice for Dentists & Practices" />
-  <meta property="og:description" content="Authoritative UK dental legal guidance covering negligence claims, GDC hearings, indemnity and practice law." />
-  <meta property="og:type" content="website" />
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
 
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}    
-    gtag('js', new Date());
-    gtag('config', 'G-KZ05YBGCP3');
-  </script>
+<style>
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  color: #1f2a44;
+  line-height: 1.6;
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f7fb;
-      color: #1f2a44;
-      line-height: 1.65;
-    }
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #3da2ff, #1f5bc2);
+  padding: 10px 20px;
+  color: white;
+}
 
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #d7e0ee;
-    }
+header .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
 
-.nav {
-  max-width: 1200px;
-  margin: auto;
+/* Nav container */
+.nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 20px;
+  flex-wrap: wrap;
 }
 
+/* Main nav */
 .main-nav {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin:0;
+  padding:0;
 }
 
-.main-nav a,
-.dropbtn {
-  margin-left: 24px;
-  font-weight: bold;
-  color: #1f2a44;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.main-nav a:hover,
-.dropbtn:hover {
-  color: #3da2ff;
-}
-
-/* Dropdown */
-.dropdown {
+.main-nav li {
   position: relative;
 }
 
-.dropdown-content {
+.main-nav > li {
+  margin-left: 30px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 5px;
+  display: block;
+}
+
+.main-nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Dropdown */
+.main-nav li ul {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
-  background: #ffffff;
-  min-width: 220px;
-  border: 1px solid #d7e0ee;
-  border-radius: 6px;
-  z-index: 9999;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 12px 16px;
+  left:0;
+  background: white;
   color: #1f2a44;
-  font-weight: normal;
+  min-width: 200px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
 }
 
-.dropdown-content a:hover {
+.main-nav li ul li {
+  margin:0;
+}
+
+.main-nav li ul li a {
+  color: #1f2a44;
+  padding: 10px 15px;
+}
+
+.main-nav li ul li a:hover {
   background: #f0f6ff;
   color: #3da2ff;
 }
 
-    .hero {
-      background: linear-gradient(180deg, #e9f3ff, #f9fbff);
-      padding: 80px 20px;
-    }
+/* Show dropdown on hover - desktop */
+@media(min-width: 901px){
+  .main-nav li:hover > ul {
+    display: block;
+  }
+}
 
-    .hero-inner {
-      max-width: 1000px;
-      margin: auto;
-    }
+/* HERO & PAGE */
+.page-wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+}
 
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
+.hero {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 8px;
+  border:1px solid #d6dce8;
+  margin-bottom:40px;
+}
 
-    .hero p {
-      font-size: 18px;
-      max-width: 800px;
-      color: #3b4f75;
-    }
+h1 { margin-top:0; font-size:38px; }
+h2 { margin-top:40px; font-size:26px; }
+h3 { margin-top:30px; font-size:20px; }
 
-    .container {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      gap: 40px;
-    }
+.content {
+  background: #ffffff;
+  padding:40px;
+  border-radius: 8px;
+  border:1px solid #d6dce8;
+}
 
-    .card {
-      background: #ffffff;
-      border: 1px solid #d7e0ee;
-      border-radius: 12px;
-      padding: 36px;
-      margin-bottom: 40px;
-    }
+.sidebar {
+  background: #ffffff;
+  padding:30px;
+  border-radius:8px;
+  border:1px solid #d6dce8;
+  height: fit-content;
+}
 
-    h2 {
-      font-size: 30px;
-      margin-top: 0;
-    }
+.ad-slot {
+  background: #eef2f8;
+  border:1px dashed #b9c4d8;
+  padding:20px;
+  margin-bottom:30px;
+  text-align:center;
+  font-size:14px;
+  color:#4b5e82;
+}
 
-    h3 {
-      font-size: 22px;
-    }
+/* FOOTER */
+footer {
+  background: #ffffff;
+  border-top:1px solid #d6dce8;
+  padding:40px 20px;
+  text-align:center;
+  font-size:14px;
+  color:#4b5e82;
+}
 
-    ul { padding-left: 20px; }
+footer a { color:#4b5e82; margin:0 10px; }
 
-    .sidebar {
-      background: #ffffff;
-      border: 1px solid #d7e0ee;
-      border-radius: 12px;
-      padding: 30px;
-      height: fit-content;
-    }
+/* MOBILE MENU */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
 
-    .sidebar h3 {
-      margin-top: 0;
-    }
+.menu-toggle span {
+  height:3px;
+  width:25px;
+  background:white;
+  margin-bottom:5px;
+  border-radius:3px;
+}
 
-    .cta-link {
-      display: block;
-      padding: 12px 0;
-      font-weight: bold;
-      color: #3da2ff;
-      text-decoration: none;
-    }
+/* Mobile layout */
+@media(max-width:900px){
+  header .logo {
+    text-align:center;
+    width:100%;
+    margin-bottom:10px;
+  }
 
-    .cta-link:hover { text-decoration: underline; }
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-    footer {
-      background: #ffffff;
-      border-top: 1px solid #d7e0ee;
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 14px;
-      color: #4b5e82;
-    }
+  .menu-toggle {
+    display:flex;
+    margin-bottom:10px;
+  }
 
-    footer a {
-      color: #3da2ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+  .main-nav {
+    flex-direction: column;
+    width: auto;
+    display: none;
+    align-items: flex-end;
+  }
 
-    @media (max-width: 900px) {
-      .container { grid-template-columns: 1fr; }
-    }
-  </style>
+  .main-nav li {
+    margin-left:0;
+    width: 100%;
+  }
+
+  .main-nav li ul {
+    position: relative;
+  }
+
+  /* Hide sidebar on mobile to avoid extra box */
+  .sidebar {
+    display: none !important;
+  }
+}
+</style>
 </head>
 
 <body>
-
 <header>
-  <div class="nav">
-    <div class="logo">
-      <strong>DentalLab.co.uk</strong>
+  <div class="logo">DentalLab.co.uk</div>
+  <div class="nav-wrapper">
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-
-    <nav class="main-nav">
-
-      <a href="/index.html">Home</a>
-
-      <div class="dropdown">
-        <span class="dropbtn">Dental Legal</span>
-        <div class="dropdown-content">
-          <a href="/dental-legal/dental-negligence.html">Dental Negligence</a>
-          <a href="/dental-legal/gdc-investigations.html">GDC Investigations</a>
-          <a href="/dental-legal/dental-indemnity.html">Dental Indemnity</a>
-          <a href="/dental-legal/employment-contracts.html">Employment & Associate Contracts</a>
-          <a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <span class="dropbtn">Dental Finance</span>
-        <div class="dropdown-content">
-          <a href="/dental-finance/practice-loans.html">Practice Loans</a>
-          <a href="/dental-finance/business-finance.html">Business Finance</a>
-          <a href="/dental-finance/insurance-tax.html">Insurance & Tax</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <span class="dropbtn">Dental Services</span>
-        <div class="dropdown-content">
-          <a href="/dental-services/saas-software.html">SaaS & Software</a>
-          <a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a>
-          <a href="/dental-services/marketing-training.html">Marketing & Training</a>
-        </div>
-      </div>
-
-      <a href="/domain-for-sale.html">Domain For Sale</a>
-
-    </nav>
+    <ul class="main-nav" id="main-nav">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/dental-legal/index.html">Dental Legal</a>
+        <ul>
+          <li><a href="/dental-legal/index.html">Dental Legal Hub</a></li>
+          <li><a href="/dental-legal/dental-negligence.html">Dental Negligence</a></li>
+          <li><a href="/dental-legal/gdc-investigations.html">GDC Investigations</a></li>
+          <li><a href="/dental-legal/dental-indemnity.html">Dental Indemnity</a></li>
+          <li><a href="/dental-legal/employment-contracts.html">Employment & Associate Contracts</a></li>
+          <li><a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a></li>
+        </ul>
+      </li>
+      <li><a href="/dental-finance/index.html">Dental Finance</a>
+        <ul>
+          <li><a href="/dental-finance/index.html">Dental Finance Hub</a></li>
+          <li><a href="/dental-finance/practice-loans.html">Practice Loans</a></li>
+          <li><a href="/dental-finance/business-finance.html">Business Finance</a></li>
+          <li><a href="/dental-finance/insurance-tax.html">Insurance & Tax</a></li>
+        </ul>
+      </li>
+      <li><a href="/dental-services/index.html">Dental Services</a>
+        <ul>
+          <li><a href="/dental-services/index.html">Dental Services Hub</a></li>
+          <li><a href="/dental-services/saas-software.html">SaaS & Software</a></li>
+          <li><a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a></li>
+          <li><a href="/dental-services/marketing-training.html">Marketing & Training</a></li>
+        </ul>
+      </li>
+      <li><a href="/dental-software/index.html">Dental Software</a>
+        <ul>
+          <li><a href="/dental-software/index.html">Dental Software Hub</a></li>
+          <li><a href="#">Software Solutions</a></li>
+          <li><a href="#">Practice Management Tools</a></li>
+        </ul>
+      </li>
+      <li><a href="/guides/index.html">Guides & Comparisons</a>
+        <ul>
+          <li><a href="/guides/index.html">Guides & Comparisons Hub</a></li>
+          <li><a href="#">Product Comparisons</a></li>
+          <li><a href="#">Software Guides</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Directory (Coming Soon)</a></li>
+      <li><a href="#">Forum (Coming Soon)</a></li>
+      <li><a href="/domain-for-sale.html">Domain For Sale</a></li>
+    </ul>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-inner">
-    <h1>Dental Legal Advice for Dentists & Practices (UK)</h1>
-    <p>
-      Welcome to the UK dental legal hub. This section provides authoritative guidance on dental negligence claims, GDC investigations, dental indemnity insurance, employment law, contracts, regulatory compliance and legal risk management for dentists, dental practices and dental businesses.
-    </p>
-  </div>
-</section>
-
-<div class="container">
-
+<div class="page-wrapper">
   <main>
+    <section class="hero">
+      <h1>Dental Legal Hub</h1>
+      <p>Your comprehensive resource for dental legal guidance, including negligence, indemnity, employment law, and regulatory compliance for UK dental professionals.</p>
+    </section>
 
-    <div class="card">
-      <h2>Dental Negligence & Clinical Claims</h2>
-      <p>
-        Dental negligence claims are one of the highest-risk and highest-cost legal issues facing UK dentists. Patients may bring claims for misdiagnosis, poor treatment outcomes, failed implants, cosmetic dentistry errors, endodontic failures, orthodontic issues and consent-related disputes.
-      </p>
-      <p>
-        Understanding how dental negligence claims work, how compensation is calculated, and how to respond to a letter of claim is critical for protecting your registration, finances and reputation.
-      </p>
-      <ul>
-        <li>Dental negligence claims process</li>
-        <li>Compensation amounts and settlements</li>
-        <li>Implant, cosmetic and orthodontic claims</li>
-        <li>Informed consent and record keeping</li>
-        <li>Limitation periods and patient complaints</li>
-      </ul>
-    </div>
+    <section class="content">
+      <h2>Dental Legal Guidance Overview</h2>
+      <p>DentalLab.co.uk provides independent insights into legal matters affecting UK dentists. From understanding professional liability to navigating regulatory frameworks, our hub ensures you stay informed and protected.</p>
 
-    <div class="card">
-      <h2>GDC Investigations & Fitness to Practise</h2>
-      <p>
-        A General Dental Council (GDC) investigation can be career-defining. Allegations may arise from patient complaints, employer referrals, criminal convictions, clinical concerns or professional conduct issues.
-      </p>
-      <p>
-        Early legal advice is essential when responding to GDC correspondence, drafting reflective statements and preparing for interim orders or fitness to practise hearings.
-      </p>
-      <ul>
-        <li>GDC complaint investigations</li>
-        <li>Fitness to practise hearings</li>
-        <li>Interim suspension and conditions</li>
-        <li>Professional conduct allegations</li>
-        <li>Appeals and restoration</li>
-      </ul>
-    </div>
+      <div class="ad-slot">In‑content AdSense placement</div>
 
-    <div class="card">
-      <h2>Dental Indemnity & Professional Insurance</h2>
-      <p>
-        Dental indemnity insurance is a legal and professional necessity. Choosing the correct level of indemnity cover protects against negligence claims, GDC proceedings, legal costs and compensation payouts.
-      </p>
-      <ul>
-        <li>Occurrence-based vs claims-made cover</li>
-        <li>Indemnity limits and exclusions</li>
-        <li>Run-off cover and retirement protection</li>
-        <li>Vicarious liability for practice owners</li>
-        <li>Insurance disputes and policy reviews</li>
-      </ul>
-    </div>
+      <h2>Key Areas Covered</h2>
+      <h3>Dental Negligence</h3>
+      <p>Guidance on handling claims, patient disputes, and risk management to protect your practice.</p>
 
-    <div class="card">
-      <h2>Dental Employment Law & Practice Contracts</h2>
-      <p>
-        Employment law issues frequently arise within dental practices, including associate agreements, hygienist contracts, restrictive covenants, IR35 considerations and disputes over pay, notice and termination.
-      </p>
-      <ul>
-        <li>Associate dentist contracts</li>
-        <li>Self-employed vs employed status</li>
-        <li>Restrictive covenants and non-compete clauses</li>
-        <li>Practice sale and purchase agreements</li>
-        <li>Shareholder and partnership disputes</li>
-      </ul>
-    </div>
+      <h3>GDC Investigations</h3>
+      <p>Advice on responding to General Dental Council investigations and maintaining compliance with professional standards.</p>
 
-    <div class="card">
-      <h2>Regulatory Compliance & Risk Management</h2>
-      <p>
-        Regulatory compliance failures can lead to enforcement action, fines, CQC intervention and reputational damage. Proactive legal risk management helps prevent issues before they arise.
-      </p>
-      <ul>
-        <li>CQC compliance and inspections</li>
-        <li>Data protection and GDPR</li>
-        <li>Consent policies and documentation</li>
-        <li>Clinical governance systems</li>
-        <li>Complaint handling procedures</li>
-      </ul>
-    </div>
+      <h3>Dental Indemnity & Insurance</h3>
+      <p>Information on indemnity policies, coverage, and professional liability protection.</p>
 
+      <h3>Employment & Associate Contracts</h3>
+      <p>Insights into employment law, associate agreements, and contractual obligations within dental practices.</p>
+
+      <h3>Regulatory Compliance</h3>
+      <p>Guidance on maintaining standards, meeting GDC requirements, and ensuring practice compliance.</p>
+
+      <div class="ad-slot">Sidebar/Content AdSense</div>
+
+      <h2>Supporting UK Dental Professionals</h2>
+      <p>DentalLab.co.uk connects dentists with trusted resources, solicitors, and actionable business guidance, ensuring compliance, risk mitigation, and professional protection.</p>
+    </section>
   </main>
 
   <aside class="sidebar">
-    <h3>Key Legal Topics</h3>
-    <a href="#" class="cta-link">Dental Negligence Claims</a>
-    <a href="#" class="cta-link">GDC Investigations</a>
-    <a href="#" class="cta-link">Dental Indemnity Insurance</a>
-    <a href="#" class="cta-link">Associate Contracts</a>
-    <a href="#" class="cta-link">CQC Compliance</a>
-
-    <hr style="margin:30px 0;">
-
-    <h3>Advertising Space</h3>
-    <p style="font-size:14px; color:#4b5e82;">
-      High-value legal advertising appears here. This placement is optimised for dental negligence solicitors, indemnity providers and professional insurers.
-    </p>
+    <div class="ad-slot">Sidebar AdSense placement</div>
+    <div class="ad-slot">Lead Form / CTA placeholder</div>
   </aside>
-
 </div>
 
 <footer>
-  <p>DentalLab.co.uk – UK Dental Legal, Finance & Business Authority</p>
-  <p>© 2025 All Rights Reserved · <a href="/domain-for-sale.html">Domain For Sale</a></p>
+  <p>
+    <a href="/index.html">Home</a> |
+    <a href="/about/">About</a> |
+    <a href="/contact/">Contact</a> |
+    <a href="/privacy-policy/">Privacy Policy</a> |
+    <a href="/domain-for-sale.html">Domain For Sale</a>
+  </p>
+  <p>DentalLab.co.uk – Expert guidance for UK dentists.</p>
+  <p>© 2025 DentalLab.co.uk</p>
 </footer>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+// Mobile menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const mainNav = document.getElementById('main-nav');
 
-    const buttons = document.querySelectorAll('.dropbtn');
-    const menus = document.querySelectorAll('.dropdown-content');
+menuToggle.addEventListener('click', () => {
+  mainNav.style.display = mainNav.style.display === 'flex' ? 'none' : 'flex';
+});
 
-    buttons.forEach(btn => {
-      btn.addEventListener('click', function (e) {
-        e.stopPropagation();
+// Mobile submenu toggle
+const navItems = mainNav.querySelectorAll('li > a');
 
-        // close other open menus
-        menus.forEach(menu => {
-          if (menu !== this.nextElementSibling) {
-            menu.style.display = 'none';
-          }
-        });
-
-        // toggle current menu
-        const dropdown = this.nextElementSibling;
-        dropdown.style.display =
-          dropdown.style.display === 'block' ? 'none' : 'block';
-      });
-    });
-
-    // close menus when clicking outside
-    document.addEventListener('click', function () {
-      menus.forEach(menu => {
-        menu.style.display = 'none';
-      });
-    });
-
+navItems.forEach(item => {
+  item.addEventListener('click', function(e){
+    const submenu = this.nextElementSibling;
+    if(submenu && submenu.tagName === 'UL' && window.innerWidth <= 900){
+      e.preventDefault();
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
   });
+});
 </script>
 
 </body>
 </html>
+
 
 
