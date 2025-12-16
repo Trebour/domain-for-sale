@@ -94,12 +94,6 @@
   color: #3da2ff;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-
     .hero {
       background: linear-gradient(180deg, #e9f3ff, #f9fbff);
       padding: 80px 20px;
@@ -239,7 +233,6 @@
   </div>
 </header>
 
-
 <section class="hero">
   <div class="hero-inner">
     <h1>Dental Legal Advice for Dentists & Practices (UK)</h1>
@@ -354,6 +347,41 @@
   <p>© 2025 All Rights Reserved · <a href="/domain-for-sale.html">Domain For Sale</a></p>
 </footer>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    const buttons = document.querySelectorAll('.dropbtn');
+    const menus = document.querySelectorAll('.dropdown-content');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+
+        // close other open menus
+        menus.forEach(menu => {
+          if (menu !== this.nextElementSibling) {
+            menu.style.display = 'none';
+          }
+        });
+
+        // toggle current menu
+        const dropdown = this.nextElementSibling;
+        dropdown.style.display =
+          dropdown.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    // close menus when clicking outside
+    document.addEventListener('click', function () {
+      menus.forEach(menu => {
+        menu.style.display = 'none';
+      });
+    });
+
+  });
+</script>
+
 </body>
 </html>
+
 
