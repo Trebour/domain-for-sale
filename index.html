@@ -1,202 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DentalLab.co.uk – Legal, Financial & Technology Guidance for UK Dentists</title>
-  <meta name="description" content="DentalLab.co.uk provides independent legal, financial, business and technology guidance for UK dentists and dental practices." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DentalLab.co.uk – Independent Business, Legal & Technology Guidance for UK Dentists</title>
+<meta name="description" content="DentalLab.co.uk is an independent authority resource covering dental legal issues, finance, professional insurance, software, and laboratory services for UK dental practices.">
+<meta name="keywords" content="dental legal, dental finance, dental software, UK dentists, dental practice management, dental indemnity, dental technology, dental laboratory services">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="DentalLab.co.uk – UK Dental Guidance" />
-  <meta property="og:description" content="Independent guidance for UK dentists covering legal, financial, technology and business topics." />
-  <meta property="og:type" content="website" />
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
 
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}    
-    gtag('js', new Date());
-    gtag('config', 'G-KZ05YBGCP3');
-  </script>
+<style>
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  color: #1f2a44;
+  line-height: 1.6;
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fa;
-      color: #1f2a44;
-      line-height: 1.6;
-    }
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #3da2ff, #1f5bc2);
+  padding: 10px 20px;
+  color: white;
+}
 
-    a { color: #1b6fdc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+header .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
 
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #d6dce8;
-    }
+/* Nav container */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-    .nav {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 20px;
-      position: relative;
-    }
+/* Main nav */
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin:0;
+  padding:0;
+}
 
-    .nav a, .dropbtn {
-      font-weight: bold;
-      color: #1f2a44;
-      text-decoration: none;
-      margin-left: 24px;
-      cursor: pointer;
-      position: relative;
-    }
+.main-nav li {
+  position: relative;
+}
 
-    .nav a:hover, .dropbtn:hover {
-      color: #3da2ff;
-    }
+.main-nav > li {
+  margin-left: 30px;
+}
 
-    .dropdown {
-      position: relative;
-    }
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 5px;
+  display: block;
+}
 
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #ffffff;
-      min-width: 200px;
-      border: 1px solid #d7e0ee;
-      border-radius: 6px;
-      z-index: 1000;
-      margin-top: 8px;
-    }
+.main-nav a:hover {
+  color: #ffeb3b;
+}
 
-    .dropdown-content a {
-      color: #1f2a44;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
+/* Dropdown */
+.main-nav li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left:0;
+  background: white;
+  color: #1f2a44;
+  min-width: 200px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+}
 
-    .dropdown-content a:hover {
-      background-color: #f0f6ff;
-      color: #3da2ff;
-    }
+.main-nav li ul li {
+  margin:0;
+}
 
-    .page-wrapper {
-      max-width: 1200px;
-      margin: 40px auto 80px;
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      gap: 40px;
-    }
+.main-nav li ul li a {
+  color: #1f2a44;
+  padding: 10px 15px;
+}
 
-    .hero {
-      background: #ffffff;
-      padding: 50px;
-      border: 1px solid #d6dce8;
-      border-radius: 8px;
-      margin-bottom: 40px;
-    }
+.main-nav li ul li a:hover {
+  background: #f0f6ff;
+  color: #3da2ff;
+}
 
-    h1 { margin-top: 0; font-size: 38px; }
-    h2 { margin-top: 40px; font-size: 26px; }
-    h3 { margin-top: 30px; font-size: 20px; }
+/* Show dropdown on hover - desktop */
+@media(min-width: 901px){
+  .main-nav li:hover > ul {
+    display: block;
+  }
+}
 
-    .content {
-      background: #ffffff;
-      padding: 40px;
-      border: 1px solid #d6dce8;
-      border-radius: 8px;
-    }
+/* HERO & PAGE */
+.page-wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+}
 
-    .sidebar {
-      background: #ffffff;
-      padding: 30px;
-      border: 1px solid #d6dce8;
-      border-radius: 8px;
-      height: fit-content;
-    }
+.hero {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 8px;
+  border:1px solid #d6dce8;
+  margin-bottom:40px;
+}
 
-    .ad-slot {
-      background: #eef2f8;
-      border: 1px dashed #b9c4d8;
-      padding: 20px;
-      margin-bottom: 30px;
-      text-align: center;
-      font-size: 14px;
-      color: #4b5e82;
-    }
+h1 { margin-top:0; font-size:38px; }
+h2 { margin-top:40px; font-size:26px; }
+h3 { margin-top:30px; font-size:20px; }
 
-    footer {
-      background: #ffffff;
-      border-top: 1px solid #d6dce8;
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #4b5e82;
-    }
+.content {
+  background: #ffffff;
+  padding:40px;
+  border-radius: 8px;
+  border:1px solid #d6dce8;
+}
 
-    footer a { color: #4b5e82; margin: 0 10px; }
+.sidebar {
+  background: #ffffff;
+  padding:30px;
+  border-radius:8px;
+  border:1px solid #d6dce8;
+  height: fit-content;
+}
 
-    @media (max-width: 900px) {
-      .page-wrapper { grid-template-columns: 1fr; }
-    }
-  </style>
+.ad-slot {
+  background: #eef2f8;
+  border:1px dashed #b9c4d8;
+  padding:20px;
+  margin-bottom:30px;
+  text-align:center;
+  font-size:14px;
+  color:#4b5e82;
+}
+
+/* FOOTER */
+footer {
+  background: #ffffff;
+  border-top:1px solid #d6dce8;
+  padding:40px 20px;
+  text-align:center;
+  font-size:14px;
+  color:#4b5e82;
+}
+
+footer a { color:#4b5e82; margin:0 10px; }
+
+/* MOBILE MENU */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height:3px;
+  width:25px;
+  background:white;
+  margin-bottom:5px;
+  border-radius:3px;
+}
+
+/* Mobile layout */
+@media(max-width:900px){
+  header .logo {
+    text-align:center;
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-end; /* menu right */
+  }
+
+  .menu-toggle {
+    display:flex;
+    margin-bottom:10px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    width: auto;
+    display: none;
+    align-items: flex-end; /* menu items right-aligned */
+  }
+
+  .main-nav li {
+    margin-left:0;
+    width: 100%;
+  }
+
+  .main-nav li ul {
+    position: relative;
+  }
+
+  /* Hide sidebar on mobile to avoid extra box */
+  .sidebar {
+    display: none !important;
+  }
+}
+</style>
 </head>
 
 <body>
-
 <header>
-  <div class="nav">
-    <div><strong>DentalLab.co.uk</strong></div>
-    <nav>
-      <a href="/index.html">Home</a>
-
-      <div class="dropdown">
-        <span class="dropbtn">Dental Legal</span>
-        <div class="dropdown-content">
-          <a href="/dental-legal/dental-negligence.html">Dental Negligence</a>
-          <a href="/dental-legal/gdc-investigations.html">GDC Investigations</a>
-          <a href="/dental-legal/dental-indemnity.html">Dental Indemnity</a>
-          <a href="/dental-legal/employment-contracts.html">Employment & Associate Contracts</a>
-          <a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <span class="dropbtn">Dental Finance</span>
-        <div class="dropdown-content">
-          <a href="/dental-finance/practice-loans.html">Practice Loans</a>
-          <a href="/dental-finance/business-finance.html">Business Finance</a>
-          <a href="/dental-finance/insurance-tax.html">Insurance & Tax</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <span class="dropbtn">Dental Services</span>
-        <div class="dropdown-content">
-          <a href="/dental-services/saas-software.html">SaaS & Software</a>
-          <a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a>
-          <a href="/dental-services/marketing-training.html">Marketing & Training</a>
-        </div>
-      </div>
-
-      <a href="/domain-for-sale.html">Domain For Sale</a>
-    </nav>
+  <div class="logo">DentalLab.co.uk</div>
+  <div class="nav-wrapper">
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="main-nav" id="main-nav">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/dental-legal/index.html">Dental Legal</a>
+        <ul>
+          <li><a href="/dental-legal/index.html">Dental Legal Hub</a></li>
+          <li><a href="/dental-legal/dental-negligence.html">Dental Negligence</a></li>
+          <li><a href="/dental-legal/gdc-investigations.html">GDC Investigations</a></li>
+          <li><a href="/dental-legal/dental-indemnity.html">Dental Indemnity</a></li>
+          <li><a href="/dental-legal/employment-contracts.html">Employment & Associate Contracts</a></li>
+          <li><a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a></li>
+        </ul>
+      </li>
+      <li><a href="/dental-finance/index.html">Dental Finance</a>
+        <ul>
+          <li><a href="/dental-finance/index.html">Dental Finance Hub</a></li>
+          <li><a href="/dental-finance/practice-loans.html">Practice Loans</a></li>
+          <li><a href="/dental-finance/business-finance.html">Business Finance</a></li>
+          <li><a href="/dental-finance/insurance-tax.html">Insurance & Tax</a></li>
+        </ul>
+      </li>
+      <li><a href="/dental-services/index.html">Dental Services</a>
+        <ul>
+          <li><a href="/dental-services/index.html">Dental Services Hub</a></li>
+          <li><a href="/dental-services/saas-software.html">SaaS & Software</a></li>
+          <li><a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a></li>
+          <li><a href="/dental-services/marketing-training.html">Marketing & Training</a></li>
+        </ul>
+      </li>
+      <li><a href="/dental-software/index.html">Dental Software</a>
+        <ul>
+          <li><a href="/dental-software/index.html">Dental Software Hub</a></li>
+          <li><a href="#">Software Solutions</a></li>
+          <li><a href="#">Practice Management Tools</a></li>
+        </ul>
+      </li>
+      <li><a href="/guides/index.html">Guides & Comparisons</a>
+        <ul>
+          <li><a href="/guides/index.html">Guides & Comparisons Hub</a></li>
+          <li><a href="#">Product Comparisons</a></li>
+          <li><a href="#">Software Guides</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Directory (Coming Soon)</a></li>
+      <li><a href="#">Forum (Coming Soon)</a></li>
+      <li><a href="/domain-for-sale.html">Domain For Sale</a></li>
+    </ul>
   </div>
 </header>
 
 <div class="page-wrapper">
-
   <main>
     <section class="hero">
       <h1>Independent Business, Legal & Technology Guidance for UK Dentists</h1>
@@ -206,12 +296,12 @@
     <section class="content">
       <h2>Supporting Dentists Beyond the Clinical Chair</h2>
       <p>Modern dental practices face increasing legal, financial, and operational complexity. From professional liability and regulatory compliance to software decisions and lab outsourcing, informed decision‑making is critical.</p>
+
       <p>DentalLab.co.uk provides neutral, commercially focused insight designed for practice owners, principals, and decision‑makers within the UK dental industry.</p>
 
       <div class="ad-slot">In‑content AdSense placement</div>
 
       <h2>Core Areas of Focus</h2>
-
       <h3>Dental Legal</h3>
       <p>Guidance on dental negligence, indemnity and insurance, employment law, and regulatory compliance.</p>
 
@@ -227,42 +317,52 @@
       <h2>Built for UK Dental Professionals</h2>
       <p>This site is written for dentists, practice owners, and management teams seeking a clearer understanding of the business and legal landscape surrounding modern dentistry.</p>
 
+      <div class="ad-slot">Sidebar/Content AdSense</div>
+      <div class="ad-slot">Future Lead / CTA placement</div>
     </section>
   </main>
 
   <aside class="sidebar">
     <div class="ad-slot">Sidebar AdSense placement</div>
-    <div class="ad-slot">Future Lead / CTA placement</div>
+    <div class="ad-slot">Lead Form / CTA placeholder</div>
   </aside>
-
 </div>
 
 <footer>
   <p>
+    <a href="/index.html">Home</a> |
     <a href="/about/">About</a> |
     <a href="/contact/">Contact</a> |
     <a href="/privacy-policy/">Privacy Policy</a> |
     <a href="/domain-for-sale.html">Domain For Sale</a>
   </p>
-  <p>DentalLab.co.uk – Independent guidance for the UK dental industry.</p>
+  <p>DentalLab.co.uk – Expert guidance for UK dentists.</p>
   <p>© 2025 DentalLab.co.uk</p>
 </footer>
 
 <script>
-  // Click-to-toggle dropdowns
-  document.querySelectorAll('.dropbtn').forEach(btn => {
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      let content = this.nextElementSibling;
-      content.style.display = (content.style.display === 'block') ? 'none' : 'block';
-    });
-  });
+// Mobile menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const mainNav = document.getElementById('main-nav');
 
-  // Close dropdowns when clicking outside
-  window.addEventListener('click', function(){
-    document.querySelectorAll('.dropdown-content').forEach(dc => dc.style.display = 'none');
+menuToggle.addEventListener('click', () => {
+  mainNav.style.display = mainNav.style.display === 'flex' ? 'none' : 'flex';
+});
+
+// Mobile submenu toggle
+const navItems = mainNav.querySelectorAll('li > a');
+
+navItems.forEach(item => {
+  item.addEventListener('click', function(e){
+    const submenu = this.nextElementSibling;
+    if(submenu && submenu.tagName === 'UL' && window.innerWidth <= 900){
+      e.preventDefault();
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
   });
+});
 </script>
 
 </body>
 </html>
+
