@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dental Legal Advice & Law UK | Dental Negligence, Claims & Compliance</title>
+  <meta name="description" content="UK dental legal hub covering dental negligence claims, GDC investigations, dental indemnity, employment law, contracts and compliance for dentists and dental practices." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dental Legal Advice for Dentists & Practices" />
+  <meta property="og:description" content="Authoritative UK dental legal guidance covering negligence claims, GDC hearings, indemnity and practice law." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}    
+    gtag('js', new Date());
+    gtag('config', 'G-KZ05YBGCP3');
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #1f2a44;
+      line-height: 1.65;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #d7e0ee;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #1f2a44;
+      margin-left: 24px;
+    }
+
+    .nav a:hover { color: #3da2ff; }
+
+    .hero {
+      background: linear-gradient(180deg, #e9f3ff, #f9fbff);
+      padding: 80px 20px;
+    }
+
+    .hero-inner {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 800px;
+      color: #3b4f75;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 40px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #d7e0ee;
+      border-radius: 12px;
+      padding: 36px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    ul { padding-left: 20px; }
+
+    .sidebar {
+      background: #ffffff;
+      border: 1px solid #d7e0ee;
+      border-radius: 12px;
+      padding: 30px;
+      height: fit-content;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+    }
+
+    .cta-link {
+      display: block;
+      padding: 12px 0;
+      font-weight: bold;
+      color: #3da2ff;
+      text-decoration: none;
+    }
+
+    .cta-link:hover { text-decoration: underline; }
+
+    footer {
+      background: #ffffff;
+      border-top: 1px solid #d7e0ee;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      color: #4b5e82;
+    }
+
+    footer a {
+      color: #3da2ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+      .container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div><strong>DentalLab.co.uk</strong></div>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/dental-legal/index.html">Dental Legal</a>
+      <a href="/domain-for-sale.html">Domain For Sale</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Dental Legal Advice for Dentists & Practices (UK)</h1>
+    <p>
+      Welcome to the UK dental legal hub. This section provides authoritative guidance on dental negligence claims, GDC investigations, dental indemnity insurance, employment law, contracts, regulatory compliance and legal risk management for dentists, dental practices and dental businesses.
+    </p>
+  </div>
+</section>
+
+<div class="container">
+
+  <main>
+
+    <div class="card">
+      <h2>Dental Negligence & Clinical Claims</h2>
+      <p>
+        Dental negligence claims are one of the highest-risk and highest-cost legal issues facing UK dentists. Patients may bring claims for misdiagnosis, poor treatment outcomes, failed implants, cosmetic dentistry errors, endodontic failures, orthodontic issues and consent-related disputes.
+      </p>
+      <p>
+        Understanding how dental negligence claims work, how compensation is calculated, and how to respond to a letter of claim is critical for protecting your registration, finances and reputation.
+      </p>
+      <ul>
+        <li>Dental negligence claims process</li>
+        <li>Compensation amounts and settlements</li>
+        <li>Implant, cosmetic and orthodontic claims</li>
+        <li>Informed consent and record keeping</li>
+        <li>Limitation periods and patient complaints</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>GDC Investigations & Fitness to Practise</h2>
+      <p>
+        A General Dental Council (GDC) investigation can be career-defining. Allegations may arise from patient complaints, employer referrals, criminal convictions, clinical concerns or professional conduct issues.
+      </p>
+      <p>
+        Early legal advice is essential when responding to GDC correspondence, drafting reflective statements and preparing for interim orders or fitness to practise hearings.
+      </p>
+      <ul>
+        <li>GDC complaint investigations</li>
+        <li>Fitness to practise hearings</li>
+        <li>Interim suspension and conditions</li>
+        <li>Professional conduct allegations</li>
+        <li>Appeals and restoration</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Dental Indemnity & Professional Insurance</h2>
+      <p>
+        Dental indemnity insurance is a legal and professional necessity. Choosing the correct level of indemnity cover protects against negligence claims, GDC proceedings, legal costs and compensation payouts.
+      </p>
+      <ul>
+        <li>Occurrence-based vs claims-made cover</li>
+        <li>Indemnity limits and exclusions</li>
+        <li>Run-off cover and retirement protection</li>
+        <li>Vicarious liability for practice owners</li>
+        <li>Insurance disputes and policy reviews</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Dental Employment Law & Practice Contracts</h2>
+      <p>
+        Employment law issues frequently arise within dental practices, including associate agreements, hygienist contracts, restrictive covenants, IR35 considerations and disputes over pay, notice and termination.
+      </p>
+      <ul>
+        <li>Associate dentist contracts</li>
+        <li>Self-employed vs employed status</li>
+        <li>Restrictive covenants and non-compete clauses</li>
+        <li>Practice sale and purchase agreements</li>
+        <li>Shareholder and partnership disputes</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Regulatory Compliance & Risk Management</h2>
+      <p>
+        Regulatory compliance failures can lead to enforcement action, fines, CQC intervention and reputational damage. Proactive legal risk management helps prevent issues before they arise.
+      </p>
+      <ul>
+        <li>CQC compliance and inspections</li>
+        <li>Data protection and GDPR</li>
+        <li>Consent policies and documentation</li>
+        <li>Clinical governance systems</li>
+        <li>Complaint handling procedures</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <aside class="sidebar">
+    <h3>Key Legal Topics</h3>
+    <a href="#" class="cta-link">Dental Negligence Claims</a>
+    <a href="#" class="cta-link">GDC Investigations</a>
+    <a href="#" class="cta-link">Dental Indemnity Insurance</a>
+    <a href="#" class="cta-link">Associate Contracts</a>
+    <a href="#" class="cta-link">CQC Compliance</a>
+
+    <hr style="margin:30px 0;">
+
+    <h3>Advertising Space</h3>
+    <p style="font-size:14px; color:#4b5e82;">
+      High-value legal advertising appears here. This placement is optimised for dental negligence solicitors, indemnity providers and professional insurers.
+    </p>
+  </aside>
+
+</div>
+
+<footer>
+  <p>DentalLab.co.uk – UK Dental Legal, Finance & Business Authority</p>
+  <p>© 2025 All Rights Reserved · <a href="/domain-for-sale.html">Domain For Sale</a></p>
+</footer>
+
+</body>
+</html>
