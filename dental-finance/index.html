@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dental Finance Hub – DentalLab.co.uk</title>
-<meta name="description" content="DentalLab.co.uk Dental Finance Hub provides expert guidance on practice finance, loans, business finance, insurance, and tax planning for UK dental practices.">
-<meta name="keywords" content="dental finance, practice loans, business finance, insurance, tax, UK dentists, dental practice management">
+<meta name="description" content="DentalLab.co.uk Finance Hub provides comprehensive guidance on practice finance, loans, business finance, insurance, and tax for UK dental professionals.">
+<meta name="keywords" content="dental finance, practice loans, business finance, dental insurance, tax guidance, UK dentists, financial planning, dental practice management">
 
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
@@ -114,7 +114,18 @@ header .logo {
 
 /* HERO & PAGE */
 .page-wrapper {
-  max-width: 800px; /* Centered for content pages */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+}
+
+/* Centered page fix */
+.page-wrapper.centered {
+  display: block;
+  max-width: 800px;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -144,6 +155,11 @@ h3 { margin-top:30px; font-size:20px; }
   border-radius:8px;
   border:1px solid #d6dce8;
   height: fit-content;
+}
+
+/* Hide sidebar for centered pages */
+.page-wrapper.centered .sidebar {
+  display: none;
 }
 
 .ad-slot {
@@ -216,11 +232,6 @@ footer a { color:#4b5e82; margin:0 10px; }
   .main-nav li ul {
     position: relative;
   }
-
-  /* Hide sidebar on mobile to avoid extra box */
-  .sidebar {
-    display: none !important;
-  }
 }
 </style>
 </head>
@@ -236,16 +247,7 @@ footer a { color:#4b5e82; margin:0 10px; }
     </div>
     <ul class="main-nav" id="main-nav">
       <li><a href="/index.html">Home</a></li>
-      <li><a href="/dental-legal/index.html">Dental Legal</a>
-        <ul>
-          <li><a href="/dental-legal/index.html">Dental Legal Hub</a></li>
-          <li><a href="/dental-legal/dental-negligence.html">Dental Negligence</a></li>
-          <li><a href="/dental-legal/dental-indemnity.html">Dental Indemnity</a></li>
-          <li><a href="/dental-legal/gdc-investigations.html">GDC Investigations</a></li>
-          <li><a href="/dental-legal/employment-contracts.html">Employment & Associate Contracts</a></li>
-          <li><a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a></li>
-        </ul>
-      </li>
+      <li><a href="/dental-legal/index.html">Dental Legal</a></li>
       <li><a href="/dental-finance/index.html">Dental Finance</a>
         <ul>
           <li><a href="/dental-finance/index.html">Dental Finance Hub</a></li>
@@ -254,48 +256,38 @@ footer a { color:#4b5e82; margin:0 10px; }
           <li><a href="/dental-finance/insurance-tax.html">Insurance & Tax</a></li>
         </ul>
       </li>
-      <li><a href="/dental-services/index.html">Dental Services</a>
-        <ul>
-          <li><a href="/dental-services/index.html">Dental Services Hub</a></li>
-          <li><a href="/dental-services/saas-software.html">SaaS & Software</a></li>
-          <li><a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a></li>
-          <li><a href="/dental-services/marketing-training.html">Marketing & Training</a></li>
-        </ul>
-      </li>
+      <li><a href="/dental-services/index.html">Dental Services</a></li>
       <li><a href="/dental-software/index.html">Dental Software</a></li>
       <li><a href="/guides/index.html">Guides & Comparisons</a></li>
-      <li><a href="/directory/index.html">Directory</a></li>
-      <li><a href="/forum/index.html">Forum</a></li>
+      <li><a href="#">Directory</a></li>
+      <li><a href="#">Forum</a></li>
       <li><a href="/domain-for-sale.html">Domain For Sale</a></li>
     </ul>
   </div>
 </header>
 
-<div class="page-wrapper">
+<div class="page-wrapper centered">
   <main>
     <section class="hero">
       <h1>Dental Finance Hub</h1>
-      <p>Expert guidance on practice finance, loans, business finance, insurance, and tax planning for UK dental practices.</p>
+      <p>Comprehensive guidance on practice finance, loans, business finance, insurance, and tax for UK dental professionals.</p>
     </section>
 
     <section class="content">
       <h2>Overview</h2>
-      <p>The Dental Finance Hub provides independent, practical insights for dentists, practice owners, and management teams navigating financial and business challenges in the UK.</p>
+      <p>The Dental Finance Hub provides independent insights and practical guidance for dentists, practice owners, and dental teams navigating financial and business decisions in the UK.</p>
 
       <div class="ad-slot">In‑content AdSense placement</div>
 
-      <h2>Core Financial Areas</h2>
-      <h3>Practice Finance & Loans</h3>
-      <p>Guidance on securing practice loans, refinancing, and managing cash flow for growing dental practices.</p>
+      <h2>Core Finance Areas</h2>
+      <h3>Practice Loans</h3>
+      <p>Advice on financing new or existing practices, including acquisition and expansion loans.</p>
 
-      <h3>Business Finance & Planning</h3>
-      <p>Support for budgeting, financial forecasting, and strategic growth decisions.</p>
+      <h3>Business Finance</h3>
+      <p>Guidance on managing cash flow, investments, and growth strategies for dental practices.</p>
 
-      <h3>Insurance & Risk Management</h3>
-      <p>Advice on professional indemnity, business insurance, and risk mitigation for dental teams.</p>
-
-      <h3>Tax Planning & Compliance</h3>
-      <p>Insights on tax-efficient structures, HMRC compliance, and optimizing practice profitability.</p>
+      <h3>Insurance & Tax</h3>
+      <p>Information on professional insurance, indemnity cover, and tax-efficient planning for dental practices.</p>
 
       <div class="ad-slot">Sidebar/Content AdSense</div>
 
