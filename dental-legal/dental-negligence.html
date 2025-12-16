@@ -61,7 +61,6 @@
             background-color: #f0f6ff;
             color: #3da2ff;
         }
-        .dropdown:hover .dropdown-content { display: block; }
 
         .page-wrapper {
             max-width: 1200px;
@@ -141,7 +140,7 @@
       <a href="/index.html">Home</a>
 
       <div class="dropdown">
-        <a href="/dental-legal/index.html">Dental Legal ▼</a>
+        <a href="#" class="dropbtn">Dental Legal</a>
         <div class="dropdown-content">
           <a href="/dental-legal/dental-negligence.html">Dental Negligence</a>
           <a href="/dental-legal/gdc-investigations.html">GDC Investigations</a>
@@ -152,7 +151,7 @@
       </div>
 
       <div class="dropdown">
-        <a href="#">Dental Finance ▼</a>
+        <a href="#" class="dropbtn">Dental Finance</a>
         <div class="dropdown-content">
           <a href="/dental-finance/practice-loans.html">Practice Loans</a>
           <a href="/dental-finance/business-finance.html">Business Finance</a>
@@ -161,7 +160,7 @@
       </div>
 
       <div class="dropdown">
-        <a href="#">Dental Services ▼</a>
+        <a href="#" class="dropbtn">Dental Services</a>
         <div class="dropdown-content">
           <a href="/dental-services/saas-software.html">SaaS & Software</a>
           <a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a>
@@ -250,5 +249,22 @@
     <p>© 2025 DentalLab.co.uk</p>
 </footer>
 
+<script>
+  // Click-to-toggle dropdown menus
+  document.querySelectorAll('.dropbtn').forEach(btn => {
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      let content = this.nextElementSibling;
+      content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+    });
+  });
+
+  window.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-content').forEach(dc => dc.style.display = 'none');
+  });
+</script>
+
 </body>
 </html>
+
