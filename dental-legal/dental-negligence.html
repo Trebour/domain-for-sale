@@ -219,9 +219,9 @@ footer a { color:#4b5e82; margin:0 10px; }
     position: relative;
   }
 
-  /* Hide sidebar ads on mobile */
-  .sidebar .ad-slot {
-    display: none;
+  /* Hide sidebar on mobile to avoid extra box */
+  .sidebar {
+    display: none !important;
   }
 }
 </style>
@@ -248,7 +248,7 @@ footer a { color:#4b5e82; margin:0 10px; }
           <li><a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a></li>
         </ul>
       </li>
-      <li><a href="#">Dental Finance</a>
+      <li><a href="/dental-finance/index.html">Dental Finance</a>
         <ul>
           <li><a href="/dental-finance/index.html">Dental Finance Hub</a></li>
           <li><a href="/dental-finance/practice-loans.html">Practice Loans</a></li>
@@ -256,7 +256,7 @@ footer a { color:#4b5e82; margin:0 10px; }
           <li><a href="/dental-finance/insurance-tax.html">Insurance & Tax</a></li>
         </ul>
       </li>
-      <li><a href="#">Dental Services</a>
+      <li><a href="/dental-services/index.html">Dental Services</a>
         <ul>
           <li><a href="/dental-services/index.html">Dental Services Hub</a></li>
           <li><a href="/dental-services/saas-software.html">SaaS & Software</a></li>
@@ -264,14 +264,14 @@ footer a { color:#4b5e82; margin:0 10px; }
           <li><a href="/dental-services/marketing-training.html">Marketing & Training</a></li>
         </ul>
       </li>
-      <li><a href="#">Dental Software</a>
+      <li><a href="/dental-software/index.html">Dental Software</a>
         <ul>
           <li><a href="/dental-software/index.html">Dental Software Hub</a></li>
           <li><a href="#">Software Solutions</a></li>
           <li><a href="#">Practice Management Tools</a></li>
         </ul>
       </li>
-      <li><a href="#">Guides & Comparisons</a>
+      <li><a href="/guides/index.html">Guides & Comparisons</a>
         <ul>
           <li><a href="/guides/index.html">Guides & Comparisons Hub</a></li> 
           <li><a href="#">Product Comparisons</a></li>
@@ -380,3 +380,4 @@ navItems.forEach(item => {
 
 </body>
 </html>
+
