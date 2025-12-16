@@ -122,6 +122,14 @@ header .logo {
   gap: 40px;
 }
 
+/* Homepage fix: center content */
+.page-wrapper.home {
+  display: block;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
 .hero {
   background: #ffffff;
   padding: 50px;
@@ -220,7 +228,7 @@ footer a { color:#4b5e82; margin:0 10px; }
     position: relative;
   }
 
-  /* Hide sidebar on mobile to avoid extra box */
+  /* Hide sidebar on mobile */
   .sidebar {
     display: none !important;
   }
@@ -286,7 +294,8 @@ footer a { color:#4b5e82; margin:0 10px; }
   </div>
 </header>
 
-<div class="page-wrapper">
+<!-- Use .home class to center content -->
+<div class="page-wrapper home">
   <main>
     <section class="hero">
       <h1>Independent Business, Legal & Technology Guidance for UK Dentists</h1>
@@ -322,6 +331,7 @@ footer a { color:#4b5e82; margin:0 10px; }
     </section>
   </main>
 
+  <!-- Sidebar remains in HTML but hidden via .home CSS -->
   <aside class="sidebar">
     <div class="ad-slot">Sidebar AdSense placement</div>
     <div class="ad-slot">Lead Form / CTA placeholder</div>
@@ -365,3 +375,4 @@ navItems.forEach(item => {
 
 </body>
 </html>
+
