@@ -22,24 +22,64 @@
             background: #ffffff;
             border-bottom: 1px solid #d6dce8;
         }
-        .nav-container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 18px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-            color: #1f2a44;
-        }
-        nav a {
-            margin-left: 24px;
-            font-weight: bold;
-            color: #1f2a44;
-            font-size: 15px;
+
+  .nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    position: relative;
+  }
+
+  .nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1f2a44;
+    margin-left: 24px;
+    position: relative;
+  }
+
+  .nav a:hover {
+    color: #3da2ff;
+  }
+
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    border: 1px solid #d7e0ee;
+    border-radius: 6px;
+    z-index: 1000;
+    margin-top: 8px;
+  }
+
+  .dropdown-content a {
+    color: #1f2a44;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f0f6ff;
+    color: #3da2ff;
+  }
+
+  /* Show the dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
         }
 
         .page-wrapper {
@@ -114,19 +154,43 @@
 <body>
 
 <header>
-    <div class="nav-container">
-        <div class="logo">DentalLab.co.uk</div>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/dental-legal/">Dental Legal</a>
-            <a href="/dental-finance/">Dental Finance</a>
-            <a href="/dental-services/">Dental Services</a>
-            <a href="/dental-software/">Dental Software</a>
-            <a href="/guides/">Guides</a>
-            <a href="/directory/">Directory</a>
-            <a href="/forum/">Forum</a>
-        </nav>
-    </div>
+  <div class="nav">
+    <div><strong>DentalLab.co.uk</strong></div>
+    <nav>
+      <a href="/index.html">Home</a>
+
+      <div class="dropdown">
+        <a href="/dental-legal/index.html">Dental Legal ▼</a>
+        <div class="dropdown-content">
+          <a href="/dental-legal/dental-negligence.html">Dental Negligence</a>
+          <a href="/dental-legal/gdc-investigations.html">GDC Investigations</a>
+          <a href="/dental-legal/dental-indemnity.html">Dental Indemnity</a>
+          <a href="/dental-legal/employment-contracts.html">Employment & Associate Contracts</a>
+          <a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">Dental Finance ▼</a>
+        <div class="dropdown-content">
+          <a href="/dental-finance/practice-loans.html">Practice Loans</a>
+          <a href="/dental-finance/business-finance.html">Business Finance</a>
+          <a href="/dental-finance/insurance-tax.html">Insurance & Tax</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">Dental Services ▼</a>
+        <div class="dropdown-content">
+          <a href="/dental-services/saas-software.html">SaaS & Software</a>
+          <a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a>
+          <a href="/dental-services/marketing-training.html">Marketing & Training</a>
+        </div>
+      </div>
+
+      <a href="/domain-for-sale.html">Domain For Sale</a>
+    </nav>
+  </div>
 </header>
 
 <div class="page-wrapper">
