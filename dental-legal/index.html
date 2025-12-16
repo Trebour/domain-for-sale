@@ -122,6 +122,14 @@ header .logo {
   gap: 40px;
 }
 
+/* Centered page fix */
+.page-wrapper.centered {
+  display: block;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
 .hero {
   background: #ffffff;
   padding: 50px;
@@ -147,6 +155,11 @@ h3 { margin-top:30px; font-size:20px; }
   border-radius:8px;
   border:1px solid #d6dce8;
   height: fit-content;
+}
+
+/* Hide sidebar for centered pages */
+.page-wrapper.centered .sidebar {
+  display: none;
 }
 
 .ad-slot {
@@ -219,11 +232,6 @@ footer a { color:#4b5e82; margin:0 10px; }
   .main-nav li ul {
     position: relative;
   }
-
-  /* Hide sidebar on mobile to avoid extra box */
-  .sidebar {
-    display: none !important;
-  }
 }
 </style>
 </head>
@@ -249,36 +257,10 @@ footer a { color:#4b5e82; margin:0 10px; }
           <li><a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a></li>
         </ul>
       </li>
-      <li><a href="/dental-finance/index.html">Dental Finance</a>
-        <ul>
-          <li><a href="/dental-finance/index.html">Dental Finance Hub</a></li>
-          <li><a href="/dental-finance/practice-loans.html">Practice Loans</a></li>
-          <li><a href="/dental-finance/business-finance.html">Business Finance</a></li>
-          <li><a href="/dental-finance/insurance-tax.html">Insurance & Tax</a></li>
-        </ul>
-      </li>
-      <li><a href="/dental-services/index.html">Dental Services</a>
-        <ul>
-          <li><a href="/dental-services/index.html">Dental Services Hub</a></li>
-          <li><a href="/dental-services/saas-software.html">SaaS & Software</a></li>
-          <li><a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a></li>
-          <li><a href="/dental-services/marketing-training.html">Marketing & Training</a></li>
-        </ul>
-      </li>
-      <li><a href="/dental-software/index.html">Dental Software</a>
-        <ul>
-          <li><a href="/dental-software/index.html">Dental Software Hub</a></li>
-          <li><a href="#">Software Solutions</a></li>
-          <li><a href="#">Practice Management Tools</a></li>
-        </ul>
-      </li>
-      <li><a href="/guides/index.html">Guides & Comparisons</a>
-        <ul>
-          <li><a href="/guides/index.html">Guides & Comparisons Hub</a></li>
-          <li><a href="#">Product Comparisons</a></li>
-          <li><a href="#">Software Guides</a></li>
-        </ul>
-      </li>
+      <li><a href="/dental-finance/index.html">Dental Finance</a></li>
+      <li><a href="/dental-services/index.html">Dental Services</a></li>
+      <li><a href="/dental-software/index.html">Dental Software</a></li>
+      <li><a href="/guides/index.html">Guides & Comparisons</a></li>
       <li><a href="#">Directory (Coming Soon)</a></li>
       <li><a href="#">Forum (Coming Soon)</a></li>
       <li><a href="/domain-for-sale.html">Domain For Sale</a></li>
@@ -286,7 +268,8 @@ footer a { color:#4b5e82; margin:0 10px; }
   </div>
 </header>
 
-<div class="page-wrapper">
+<!-- Centered content page -->
+<div class="page-wrapper centered">
   <main>
     <section class="hero">
       <h1>Dental Legal Hub</h1>
@@ -371,3 +354,4 @@ navItems.forEach(item => {
 
 </body>
 </html>
+
