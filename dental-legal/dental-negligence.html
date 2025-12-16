@@ -29,10 +29,10 @@
   a { color: #1b6fdc; text-decoration: none; }
   a:hover { text-decoration: underline; }
 
-  header {
-    background: #3da2ff;
-    color: #ffffff;
-  }
+ header {
+  background: linear-gradient(180deg, #e9f3ff, #f9fbff); /* light blue gradient */
+  color: #1f2a44; /* text color */
+}
 
   .nav-container {
     max-width: 1200px;
@@ -66,7 +66,10 @@
     display: block;
   }
 
-  .nav-item a:hover { color: #e0f0ff; }
+  .nav a:hover,
+.dropbtn:hover {
+  color: #3da2ff; /* link hover blue */
+}
 
   .dropdown-content {
     display: none;
