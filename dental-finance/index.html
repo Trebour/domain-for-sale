@@ -105,6 +105,7 @@ header .logo {
   color: #3da2ff;
 }
 
+/* Show dropdown on hover - desktop */
 @media(min-width: 901px){
   .main-nav li:hover > ul {
     display: block;
@@ -121,10 +122,10 @@ header .logo {
   gap: 40px;
 }
 
-/* Centered layout (no sidebar) */
+/* Homepage fix: center content */
 .page-wrapper.home {
   display: block;
-  max-width: 900px;
+  max-width: 800px;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -169,6 +170,56 @@ footer {
 }
 
 footer a { color:#4b5e82; margin:0 10px; }
+
+/* MOBILE MENU */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height:3px;
+  width:25px;
+  background:white;
+  margin-bottom:5px;
+  border-radius:3px;
+}
+
+/* Mobile layout */
+@media(max-width:900px){
+  header .logo {
+    text-align:center;
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menu-toggle {
+    display:flex;
+    margin-bottom:10px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    width: auto;
+    display: none;
+    align-items: flex-end;
+  }
+
+  .main-nav li {
+    margin-left:0;
+    width: 100%;
+  }
+
+  .main-nav li ul {
+    position: relative;
+  }
+}
 </style>
 </head>
 
@@ -181,102 +232,87 @@ footer a { color:#4b5e82; margin:0 10px; }
       <span></span>
       <span></span>
     </div>
-<ul class="main-nav" id="main-nav">
-  <li><a href="/index.html">Home</a></li>
-
-  <li><a href="/dental-legal/index.html">Dental Legal</a>
-    <ul>
-      <li><a href="/dental-legal/index.html">Dental Legal Hub</a></li>
-      <li><a href="/dental-legal/dental-negligence.html">Dental Negligence</a></li>
-      <li><a href="/dental-legal/gdc-investigations.html">GDC Investigations</a></li>
-      <li><a href="/dental-legal/dental-indemnity.html">Dental Indemnity</a></li>
-      <li><a href="/dental-legal/employment-contracts.html">Employment & Associate Contracts</a></li>
-      <li><a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a></li>
+    <ul class="main-nav" id="main-nav">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/dental-legal/index.html">Dental Legal</a>
+        <ul>
+          <li><a href="/dental-legal/index.html">Dental Legal Hub</a></li>
+          <li><a href="/dental-legal/dental-negligence.html">Dental Negligence</a></li>
+          <li><a href="/dental-legal/gdc-investigations.html">GDC Investigations</a></li>
+          <li><a href="/dental-legal/dental-indemnity.html">Dental Indemnity</a></li>
+          <li><a href="/dental-legal/employment-contracts.html">Employment & Associate Contracts</a></li>
+          <li><a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a></li>
+        </ul>
+      </li>
+      <li><a href="/dental-finance/index.html">Dental Finance</a>
+        <ul>
+          <li><a href="/dental-finance/index.html">Dental Finance Hub</a></li>
+          <li><a href="/dental-finance/practice-loans.html">Practice Loans</a></li>
+          <li><a href="/dental-finance/business-finance.html">Business Finance</a></li>
+          <li><a href="/dental-finance/insurance-tax.html">Insurance & Tax</a></li>
+        </ul>
+      </li>
+      <li><a href="/dental-services/index.html">Dental Services</a>
+        <ul>
+          <li><a href="/dental-services/index.html">Dental Services Hub</a></li>
+          <li><a href="/dental-services/saas-software.html">SaaS & Software</a></li>
+          <li><a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a></li>
+          <li><a href="/dental-services/marketing-training.html">Marketing & Training</a></li>
+        </ul>
+      </li>
+      <li><a href="/dental-software/index.html">Dental Software</a>
+        <ul>
+          <li><a href="/dental-software/index.html">Dental Software Hub</a></li>
+          <li><a href="#">Software Solutions</a></li>
+          <li><a href="#">Practice Management Tools</a></li>
+        </ul>
+      </li>
+      <li><a href="/guides/index.html">Guides & Comparisons</a>
+        <ul>
+          <li><a href="/guides/index.html">Guides & Comparisons Hub</a></li>
+          <li><a href="#">Product Comparisons</a></li>
+          <li><a href="#">Software Guides</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Directory</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="/domain-for-sale.html">Domain For Sale</a></li>
     </ul>
-  </li>
-
-  <li><a href="/dental-finance/index.html">Dental Finance</a>
-    <ul>
-      <li><a href="/dental-finance/index.html">Dental Finance Hub</a></li>
-      <li><a href="/dental-finance/practice-loans.html">Practice Loans</a></li>
-      <li><a href="/dental-finance/business-finance.html">Business Finance</a></li>
-      <li><a href="/dental-finance/insurance-tax.html">Insurance & Tax</a></li>
-    </ul>
-  </li>
-
-  <li><a href="/dental-services/index.html">Dental Services</a>
-    <ul>
-      <li><a href="/dental-services/index.html">Dental Services Hub</a></li>
-      <li><a href="/dental-services/saas-software.html">SaaS & Software</a></li>
-      <li><a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a></li>
-      <li><a href="/dental-services/marketing-training.html">Marketing & Training</a></li>
-    </ul>
-  </li>
-
-  <li><a href="/dental-software/index.html">Dental Software</a>
-    <ul>
-      <li><a href="/dental-software/index.html">Dental Software Hub</a></li>
-      <li><a href="#">Software Solutions</a></li>
-      <li><a href="#">Practice Management Tools</a></li>
-    </ul>
-  </li>
-
-  <li><a href="/guides/index.html">Guides & Comparisons</a>
-    <ul>
-      <li><a href="/guides/index.html">Guides & Comparisons Hub</a></li>
-      <li><a href="#">Product Comparisons</a></li>
-      <li><a href="#">Software Guides</a></li>
-    </ul>
-  </li>
-
-  <li><a href="#">Directory</a></li>
-  <li><a href="#">Forum</a></li>
-  <li><a href="/domain-for-sale.html">Domain For Sale</a></li>
-</ul>
   </div>
 </header>
 
 <div class="page-wrapper home">
   <main>
     <section class="hero">
-      <h1>Dental Finance Guidance for UK Practice Owners</h1>
-      <p>Independent, commercially focused insight into dental practice finance, funding, insurance and tax considerations for UK dentists.</p>
+      <h1>Dental Finance Hub – Practice Funding & Insurance Guidance for UK Dentists</h1>
+      <p>Independent, authoritative insight into practice loans, business finance, insurance, and tax planning for UK dental practices.</p>
     </section>
 
     <section class="content">
-      <h2>Dental Practice Finance in the UK</h2>
-      <p>Dental finance underpins the long-term sustainability of UK dental practices. Beyond clinical delivery, practice owners must manage funding, cash flow, insurance obligations and tax exposure within a tightly regulated environment. Sound financial decision-making protects profitability, reduces risk and enables controlled growth.</p>
+      <h2>Understanding Dental Finance in the UK</h2>
+      <p>Dental finance is a critical pillar for sustainable UK dental practices. From practice acquisitions and equipment investments to tax efficiency and insurance coverage, making informed financial decisions safeguards profitability and reduces risk.</p>
 
-      <p>UK dentists face financial pressures shaped by NHS contract structures, private income variability, associate arrangements and rising operational costs. Access to profession-specific finance guidance allows dentists to make informed decisions at each stage of ownership.</p>
+      <div class="ad-slot">In‑content AdSense placement</div>
 
-      <div class="ad-slot">In-content AdSense placement</div>
+      <h2>Practice Loans</h2>
+      <p>Practice loans allow dentists to acquire, expand, or refurbish their clinics. Lenders typically assess NHS contract value, private income streams, and associate arrangements rather than standard SME lending criteria. Access tailored guidance in our <a href="/dental-finance/practice-loans.html">Practice Loans</a> section.</p>
 
-      <h2>Practice Loans and Funding Options</h2>
-      <p>Practice loans are a cornerstone of dental finance. Dentists commonly require funding to acquire practices, buy into partnerships, invest in equipment or refurbish premises. Dental lenders assess income stability, contract values and historic performance rather than applying generic business lending criteria.</p>
+      <h2>Business Finance & Cash Flow</h2>
+      <p>Effective business finance management ensures smooth operations and supports growth. This includes working capital facilities, structured lending, and careful cash flow monitoring, particularly in practices with mixed NHS and private income.</p>
+      <p>Explore detailed strategies in <a href="/dental-finance/business-finance.html">Business Finance</a>.</p>
 
-      <p>Detailed funding structures and lender considerations are explored in our <a href="/dental-finance/practice-loans.html">Practice Loans</a> section.</p>
+      <div class="ad-slot">In‑content AdSense placement</div>
 
-      <h2>Business Finance and Cash Flow Management</h2>
-      <p>Effective business finance extends beyond borrowing. Cash flow management is critical for practices operating mixed or private income models, where revenue timing can fluctuate. Working capital facilities and structured finance solutions support payroll, laboratory costs and supplier commitments.</p>
+      <h2>Insurance, Indemnity & Tax Planning</h2>
+      <p>Professional indemnity, practice insurance, and tax planning are integral to financial security. Properly structured coverage protects income and assets while optimizing tax efficiency. Guidance is available in <a href="/dental-finance/insurance-tax.html">Insurance & Tax</a>.</p>
 
-      <p>Our <a href="/dental-finance/business-finance.html">Business Finance</a> guidance covers cash flow control, expansion funding and financial resilience.</p>
-
-      <div class="ad-slot">In-content AdSense placement</div>
-
-      <h2>Insurance, Indemnity and Tax Planning</h2>
-      <p>Insurance and tax planning form a core component of dental financial risk management. Professional indemnity, practice insurance and income protection safeguard against unexpected disruption, while effective tax planning influences retained earnings and long-term wealth.</p>
-
-      <p>Comprehensive guidance is available within <a href="/dental-finance/insurance-tax.html">Insurance &amp; Tax</a>.</p>
-
-      <h2>Where Finance and Legal Risk Intersect</h2>
-      <p>Financial decisions in dentistry frequently overlap with legal exposure. Loan agreements, associate contracts and indemnity arrangements can expose practice owners to personal liability if poorly structured.</p>
-
-      <p>Related considerations are covered within the <a href="/dental-legal/index.html">Dental Legal</a> section.</p>
+      <h2>Legal & Financial Intersections</h2>
+      <p>Financial decisions in dentistry often overlap with legal considerations. Loan agreements, associate contracts, and indemnity terms must be carefully structured to avoid personal liability. Related content is available in <a href="/dental-legal/index.html">Dental Legal</a>.</p>
 
       <div class="ad-slot">Future AdSense / Lead placement</div>
 
-      <h2>Independent Finance Insight for Dentists</h2>
-      <p>DentalLab.co.uk provides independent, UK-focused finance guidance written for dentists, principals and practice owners. Content is designed to support informed decision-making without sales pressure, helping practices operate more securely and profitably.</p>
+      <h2>Independent Guidance for Dentists</h2>
+      <p>DentalLab.co.uk offers UK-focused, independent dental finance insight, helping practice owners make informed, low-risk decisions to grow and protect their practices.</p>
     </section>
   </main>
 </div>
@@ -292,6 +328,29 @@ footer a { color:#4b5e82; margin:0 10px; }
   <p>DentalLab.co.uk – Expert guidance for UK dentists.</p>
   <p>© 2025 DentalLab.co.uk</p>
 </footer>
+
+<script>
+// Mobile menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const mainNav = document.getElementById('main-nav');
+
+menuToggle.addEventListener('click', () => {
+  mainNav.style.display = mainNav.style.display === 'flex' ? 'none' : 'flex';
+});
+
+// Mobile submenu toggle
+const navItems = mainNav.querySelectorAll('li > a');
+
+navItems.forEach(item => {
+  item.addEventListener('click', function(e){
+    const submenu = this.nextElementSibling;
+    if(submenu && submenu.tagName === 'UL' && window.innerWidth <= 900){
+      e.preventDefault();
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
+  });
+});
+</script>
 
 </body>
 </html>
