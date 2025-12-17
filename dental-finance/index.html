@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dental Finance Hub – Practice Finance, Loans & Insurance for UK Dentists | DentalLab.co.uk</title>
-<meta name="description" content="Authoritative guidance on dental practice finance for UK dentists. Explore loans, business finance, insurance and tax planning to support sustainable, profitable dental practices.">
+<meta name="description" content="Independent guidance on dental practice finance for UK dentists. Explore practice loans, business finance, insurance and tax planning for sustainable practice growth.">
 <meta name="keywords" content="dental finance, dental practice finance, dental finance UK, practice loans dentists, dental business finance, dental insurance tax UK">
 
 <!-- Google AdSense -->
@@ -27,6 +27,202 @@ body {
   color: #1f2a44;
   line-height: 1.6;
 }
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #3da2ff, #1f5bc2);
+  padding: 10px 20px;
+  color: white;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Nav container */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Main nav */
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.main-nav li {
+  position: relative;
+}
+
+.main-nav > li {
+  margin-left: 30px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 5px;
+  display: block;
+}
+
+.main-nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Dropdown */
+.main-nav li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left:0;
+  background: white;
+  color: #1f2a44;
+  min-width: 200px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.main-nav li ul li {
+  margin:0;
+}
+
+.main-nav li ul li a {
+  color: #1f2a44;
+  padding: 10px 15px;
+}
+
+.main-nav li ul li a:hover {
+  background: #f0f6ff;
+  color: #3da2ff;
+}
+
+/* Show dropdown on hover - desktop */
+@media(min-width: 901px){
+  .main-nav li:hover > ul {
+    display: block;
+  }
+}
+
+/* HERO & PAGE */
+.page-wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+}
+
+.hero {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 8px;
+  border:1px solid #d6dce8;
+  margin-bottom:40px;
+}
+
+h1 { margin-top:0; font-size:38px; }
+h2 { margin-top:40px; font-size:26px; }
+h3 { margin-top:30px; font-size:20px; }
+
+.content {
+  background: #ffffff;
+  padding:40px;
+  border-radius: 8px;
+  border:1px solid #d6dce8;
+}
+
+.sidebar {
+  background: #ffffff;
+  padding:30px;
+  border-radius:8px;
+  border:1px solid #d6dce8;
+  height: fit-content;
+}
+
+.ad-slot {
+  background: #eef2f8;
+  border:1px dashed #b9c4d8;
+  padding:20px;
+  margin-bottom:30px;
+  text-align:center;
+  font-size:14px;
+  color:#4b5e82;
+}
+
+/* FOOTER */
+footer {
+  background: #ffffff;
+  border-top:1px solid #d6dce8;
+  padding:40px 20px;
+  text-align:center;
+  font-size:14px;
+  color:#4b5e82;
+}
+
+footer a { color:#4b5e82; margin:0 10px; }
+
+/* MOBILE MENU */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height:3px;
+  width:25px;
+  background:white;
+  margin-bottom:5px;
+  border-radius:3px;
+}
+
+@media(max-width:900px){
+  header .logo {
+    text-align:center;
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menu-toggle {
+    display:flex;
+    margin-bottom:10px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    width: auto;
+    display: none;
+    align-items: flex-end;
+  }
+
+  .main-nav li {
+    margin-left:0;
+    width: 100%;
+  }
+
+  .main-nav li ul {
+    position: relative;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+}
 </style>
 </head>
 
@@ -41,24 +237,8 @@ body {
     </div>
     <ul class="main-nav" id="main-nav">
       <li><a href="/index.html">Home</a></li>
-      <li><a href="/dental-legal/index.html">Dental Legal</a>
-        <ul>
-          <li><a href="/dental-legal/index.html">Dental Legal Hub</a></li>
-          <li><a href="/dental-legal/dental-negligence.html">Dental Negligence</a></li>
-          <li><a href="/dental-legal/gdc-investigations.html">GDC Investigations</a></li>
-          <li><a href="/dental-legal/dental-indemnity.html">Dental Indemnity</a></li>
-          <li><a href="/dental-legal/employment-contracts.html">Employment & Associate Contracts</a></li>
-          <li><a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a></li>
-        </ul>
-      </li>
-      <li><a href="/dental-finance/index.html">Dental Finance</a>
-        <ul>
-          <li><a href="/dental-finance/index.html">Dental Finance Hub</a></li>
-          <li><a href="/dental-finance/practice-loans.html">Practice Loans</a></li>
-          <li><a href="/dental-finance/business-finance.html">Business Finance</a></li>
-          <li><a href="/dental-finance/insurance-tax.html">Insurance & Tax</a></li>
-        </ul>
-      </li>
+      <li><a href="/dental-legal/index.html">Dental Legal</a></li>
+      <li><a href="/dental-finance/index.html">Dental Finance</a></li>
       <li><a href="/dental-services/index.html">Dental Services</a></li>
       <li><a href="/dental-software/index.html">Dental Software</a></li>
       <li><a href="/guides/index.html">Guides & Comparisons</a></li>
@@ -77,71 +257,51 @@ body {
     </section>
 
     <section class="content">
-      <h2>Understanding Dental Practice Finance in the UK</h2>
-      <p>Running a successful dental practice requires far more than clinical expertise. Financial decision-making plays a defining role in long-term sustainability, profitability and risk management. From securing appropriate funding to managing cash flow, insurance obligations and tax exposure, dental finance is a specialist area with challenges unique to the profession.</p>
+      <h2>Dental Practice Finance in the UK</h2>
+      <p>Dental finance plays a central role in the success and sustainability of UK dental practices. Beyond clinical delivery, practice owners must manage funding, cash flow, insurance obligations and tax exposure within a highly regulated environment. Sound financial decision-making supports profitability, reduces risk and enables long-term growth.</p>
 
-      <p>UK dentists operate within a complex environment shaped by NHS contracts, private income streams, regulatory obligations and rising operational costs. Accessing reliable, sector-specific financial information allows practice owners to make informed decisions that protect both income and professional standing.</p>
+      <p>UK dentists face unique financial challenges shaped by NHS contract structures, private income variability, associate arrangements and increasing operational costs. Access to sector-specific finance guidance allows dentists to navigate these pressures with greater confidence.</p>
 
       <div class="ad-slot">In-content AdSense placement</div>
 
-      <h2>Practice Loans and Funding Options</h2>
-      <p>Practice loans remain a core component of dental finance. Whether you are purchasing your first practice, expanding premises, investing in new equipment or refinancing existing debt, loan structures for dentists differ significantly from general business lending.</p>
+      <h2>Practice Loans and Dental Funding</h2>
+      <p>Practice loans are a cornerstone of dental finance. Dentists commonly require funding to purchase practices, invest in equipment, refurbish premises or refinance existing borrowing. Unlike general business lending, dental practice finance is assessed against professional income stability, contract performance and long-term viability.</p>
 
-      <p>Lenders assess factors such as contract stability, NHS versus private income mix, associate structures and historical performance. Understanding these criteria improves approval outcomes and ensures finance arrangements align with long-term practice goals.</p>
+      <p>Lenders consider NHS contract values, private income mix, historic profitability and associate structures when underwriting dental loans. Selecting appropriate finance terms is essential to avoid unnecessary financial strain.</p>
 
-      <p>Explore detailed guidance on funding routes, eligibility and lender considerations in our dedicated <a href="/dental-finance/practice-loans.html">Practice Loans</a> section.</p>
-
-      <h3>Common Uses of Dental Practice Loans</h3>
-      <ul>
-        <li>Practice acquisition or buy-in as an associate</li>
-        <li>Refurbishment and surgery expansion</li>
-        <li>Dental equipment and technology investment</li>
-        <li>Debt consolidation and refinancing</li>
-      </ul>
+      <p>Detailed funding options and lender considerations are explored within our <a href="/dental-finance/practice-loans.html">Practice Loans</a> section.</p>
 
       <h2>Business Finance and Cash Flow Management</h2>
-      <p>Beyond traditional loans, effective business finance strategies are critical to maintaining operational stability. Cash flow disruption is one of the most common financial risks faced by dental practices, particularly those with mixed or private income models.</p>
+      <p>Effective business finance extends beyond borrowing. Cash flow management is one of the most critical financial disciplines for dental practices, particularly those operating mixed or private models. Fluctuating patient volumes, laboratory costs and staffing expenses can place pressure on working capital.</p>
 
-      <p>Working capital facilities, asset finance, and structured overdrafts can support payroll, laboratory costs and supplier payments during periods of fluctuation. Sound financial planning also underpins growth strategies such as adding new services, extending opening hours or integrating advanced technology.</p>
+      <p>Facilities such as asset finance, structured overdrafts and working capital solutions help maintain operational stability. Strategic financial planning also supports expansion, recruitment and service diversification.</p>
 
-      <p>Our <a href="/dental-finance/business-finance.html">Business Finance</a> guidance examines practical approaches to managing cash flow, funding growth and strengthening financial resilience.</p>
+      <p>Our <a href="/dental-finance/business-finance.html">Business Finance</a> guidance addresses cash flow control, growth funding and financial resilience.</p>
 
       <div class="ad-slot">In-content AdSense placement</div>
 
-      <h2>Insurance, Indemnity and Tax Considerations</h2>
-      <p>Financial risk in dentistry extends well beyond balance sheets. Insurance and tax planning play a central role in protecting both personal and practice finances. Professional indemnity, practice insurance and income protection are not optional extras — they are fundamental components of responsible practice ownership.</p>
+      <h2>Insurance, Indemnity and Tax Planning</h2>
+      <p>Insurance and tax considerations are integral to dental finance. Professional indemnity, practice insurance and income protection safeguard against financial shocks, while effective tax planning influences retained earnings and long-term wealth.</p>
 
-      <p>Tax efficiency is equally important. Dentists face complex tax considerations influenced by practice structure, income mix and long-term exit planning. Proactive planning can significantly impact retained earnings and retirement outcomes.</p>
+      <p>Practice owners must balance regulatory requirements with cost efficiency, ensuring cover remains appropriate as practices evolve.</p>
 
-      <p>Detailed analysis of insurance requirements and tax planning strategies is available within our <a href="/dental-finance/insurance-tax.html">Insurance &amp; Tax</a> section.</p>
+      <p>Comprehensive guidance is available in our <a href="/dental-finance/insurance-tax.html">Insurance &amp; Tax</a> section.</p>
 
-      <h3>Insurance Areas Every Dentist Should Review</h3>
-      <ul>
-        <li>Professional indemnity and liability cover</li>
-        <li>Practice premises and equipment insurance</li>
-        <li>Income protection and critical illness</li>
-        <li>Employer and public liability</li>
-      </ul>
+      <h2>Financial Risk and Legal Exposure</h2>
+      <p>Financial decisions frequently intersect with legal risk. Loan agreements, associate contracts and indemnity arrangements can expose dentists to significant liabilities if poorly structured.</p>
 
-      <h2>Where Dental Finance Intersects with Legal Risk</h2>
-      <p>Financial decisions in dentistry are closely linked to legal exposure. Loan agreements, associate contracts, indemnity arrangements and regulatory compliance all carry financial implications if mismanaged.</p>
-
-      <p>For example, inadequate indemnity cover may expose practice owners to personal financial liability, while poorly structured associate agreements can undermine income security. Understanding these overlaps helps dentists mitigate risk proactively.</p>
-
-      <p>Related legal guidance is covered extensively within our <a href="/dental-legal/index.html">Dental Legal</a> section, including dental indemnity, employment contracts and regulatory compliance.</p>
+      <p>Related legal considerations are covered within the <a href="/dental-legal/index.html">Dental Legal</a> section, including indemnity, employment contracts and regulatory compliance.</p>
 
       <div class="ad-slot">Future AdSense / Lead placement</div>
 
-      <h2>Independent, UK-Focused Financial Insight</h2>
-      <p>DentalLab.co.uk provides independent, commercially focused information designed specifically for the UK dental market. Content is written for practice owners, principals and decision-makers seeking clarity rather than sales-led advice.</p>
-
-      <p>As this section expands, you will find in-depth guides, comparisons and expert commentary covering the full spectrum of dental practice finance — from funding and insurance to long-term financial planning.</p>
+      <h2>Independent Finance Insight for UK Dentists</h2>
+      <p>DentalLab.co.uk provides independent, UK-focused financial guidance written for dentists, principals and practice owners. Content is designed to inform decision-making rather than promote products, supporting sustainable and commercially sound practices.</p>
     </section>
   </main>
 
   <aside class="sidebar">
     <div class="ad-slot">Sidebar AdSense placement</div>
-    <div class="ad-slot">Finance Comparison / Lead CTA</div>
+    <div class="ad-slot">Finance Comparison / CTA</div>
   </aside>
 </div>
 
