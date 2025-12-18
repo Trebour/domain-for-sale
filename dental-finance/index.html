@@ -6,11 +6,29 @@
 <title>Dental Finance Hub – Practice Finance, Loans & Insurance for UK Dentists | DentalLab.co.uk</title>
 <meta name="description" content="Independent guidance on dental practice finance for UK dentists. Explore practice loans, business finance, insurance and tax planning for sustainable practice growth.">
 <meta name="keywords" content="dental finance, dental practice finance, dental finance UK, practice loans dentists, dental business finance, dental insurance tax UK">
+
+<!-- Link to shared CSS -->
+<link rel="stylesheet" href="/css/styles.css">
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
 </head>
 
 <body>
+
+<!-- Header include -->
 <div id="header-placeholder"></div>
 
+<!-- Page content -->
 <div class="page-wrapper home">
   <main>
     <section class="hero">
@@ -28,7 +46,8 @@
       <p>Practice loans allow dentists to acquire, expand, or refurbish their clinics. Lenders typically assess NHS contract value, private income streams, and associate arrangements rather than standard SME lending criteria. Access tailored guidance in our <a href="/dental-finance/practice-loans.html">Practice Loans</a> section.</p>
 
       <h2>Business Finance & Cash Flow</h2>
-      <p>Effective business finance management ensures smooth operations and supports growth. This includes working capital facilities, structured lending, and careful cash flow monitoring, particularly in practices with mixed NHS and private income. Explore detailed strategies in <a href="/dental-finance/business-finance.html">Business Finance</a>.</p>
+      <p>Effective business finance management ensures smooth operations and supports growth. This includes working capital facilities, structured lending, and careful cash flow monitoring, particularly in practices with mixed NHS and private income.</p>
+      <p>Explore detailed strategies in <a href="/dental-finance/business-finance.html">Business Finance</a>.</p>
 
       <div class="ad-slot">In‑content AdSense placement</div>
 
@@ -46,47 +65,44 @@
   </main>
 </div>
 
+<!-- Footer include -->
+<div id="footer-placeholder"></div>
+
+<!-- JavaScript to load header/footer and toggle mobile menu -->
 <script>
-// Function to load HTML into a placeholder
-function loadInclude(id, url) {
+// Load header and footer
+function loadInclude(id, url){
   fetch(url)
-    .then(response => {
-      if (!response.ok) throw new Error('Network response was not ok');
-      return response.text();
-    })
-    .then(html => document.getElementById(id).innerHTML = html)
-    .catch(error => console.error('Error loading include:', error));
+    .then(response => response.text())
+    .then(data => document.getElementById(id).innerHTML = data)
+    .then(() => {
+      if(id === 'header-placeholder'){
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click', () => {
+            mainNav.style.display = mainNav.style.display === 'flex' ? 'none' : 'flex';
+          });
+
+          const navItems = mainNav.querySelectorAll('li > a');
+          navItems.forEach(item => {
+            item.addEventListener('click', function(e){
+              const submenu = this.nextElementSibling;
+              if(submenu && submenu.tagName === 'UL' && window.innerWidth <= 900){
+                e.preventDefault();
+                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+              }
+            });
+          });
+        }
+      }
+    });
 }
 
-// Load header and footer
-loadInclude('header-placeholder', '/includes/header.html');
-loadInclude('footer-placeholder', '/includes/footer.html');
-
-// Mobile menu toggle (copied from header-scripts)
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.querySelector('#header-placeholder .menu-toggle');
-  const mainNav = document.querySelector('#header-placeholder .main-nav');
-
-  if(menuToggle && mainNav){
-    menuToggle.addEventListener('click', () => {
-      mainNav.style.display = mainNav.style.display === 'flex' ? 'none' : 'flex';
-    });
-
-    // Mobile submenu toggle
-    const navItems = mainNav.querySelectorAll('li > a');
-    navItems.forEach(item => {
-      item.addEventListener('click', function(e){
-        const submenu = this.nextElementSibling;
-        if(submenu && submenu.tagName === 'UL' && window.innerWidth <= 900){
-          e.preventDefault();
-          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-        }
-      });
-    });
-  }
-});
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
 </script>
 
-<div id="footer-placeholder"></div>
 </body>
 </html>
