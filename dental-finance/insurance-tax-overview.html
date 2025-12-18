@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insurance & Tax Overview for UK Dentists | DentalLab.co.uk</title>
+<meta name="description" content="Independent guidance for UK dentists on professional indemnity, practice insurance, and tax planning to protect income and optimize finances.">
+<meta name="keywords" content="insurance, tax planning, professional indemnity, dental practice finance, UK dentists">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper home">
+  <main>
+    <section class="hero">
+      <h1>Insurance & Tax Overview – Safeguarding Your Practice</h1>
+      <p>Explore key considerations for professional indemnity, practice insurance, and tax planning tailored for UK dentists.</p>
+    </section>
+
+    <section class="content">
+      <h2>Professional Indemnity & Practice Insurance</h2>
+      <p>Proper coverage protects your practice from clinical, operational, and legal risks. Key areas include:</p>
+      <ul>
+        <li>Professional indemnity (<a href="/dental-finance/professional-indemnity.html">Professional Indemnity</a>)</li>
+        <li>Buildings, contents, and equipment insurance</li>
+        <li>Business interruption and liability coverage</li>
+      </ul>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Tax Planning Considerations</h2>
+      <ul>
+        <li>Choosing the optimal business structure</li>
+        <li>Claiming allowable business expenses (<a href="/dental-finance/tax-efficiency-tips.html">Tax Efficiency Tips</a>)</li>
+        <li>Pension and long-term financial planning</li>
+      </ul>
+
+      <h2>Linking with Business Finance</h2>
+      <p>Integrate insurance and tax decisions with cash flow (<a href="/dental-finance/cash-flow-management.html">Cash Flow Management</a>), working capital (<a href="/dental-finance/working-capital-strategies.html">Working Capital Strategies</a>), and loan planning (<a href="/dental-finance/practice-loans-overview.html">Practice Loans Overview</a>).</p>
+
+      <div class="ad-slot">Future AdSense / Lead placement</div>
+    </section>
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{if(id==='header-placeholder'){
+      const menuToggle=document.getElementById('menu-toggle');
+      const mainNav=document.getElementById('main-nav');
+      if(menuToggle && mainNav){
+        menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+        const navItems=mainNav.querySelectorAll('li > a');
+        navItems.forEach(item=>{item.addEventListener('click',function(e){
+          const submenu=this.nextElementSibling;
+          if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+            e.preventDefault();
+            submenu.style.display=submenu.style.display==='block'?'none':'block';
+          }
+        });});
+      }
+    }});
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+</body>
+</html>
 
