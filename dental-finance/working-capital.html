@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Working Capital & Operational Finance for UK Dentists | DentalLab.co.uk</title>
+<meta name="description" content="Discover strategies for managing working capital, optimizing operational finance, and ensuring smooth daily operations for UK dental practices.">
+<meta name="keywords" content="working capital, operational finance, dental practice finance, UK dentists, cash management">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+<div class="page-wrapper">
+  <main>
+    <section class="hero">
+      <h1>Working Capital & Operational Finance</h1>
+      <p>Strategies to manage working capital, control expenses, and ensure your UK dental practice operates efficiently every day.</p>
+    </section>
+
+    <section class="content">
+      <h2>Optimizing Working Capital</h2>
+      <p>Working capital ensures your practice has sufficient liquidity to meet short-term obligations. Key tactics include:</p>
+      <ul>
+        <li>Monitoring receivables and payables to avoid cash shortages</li>
+        <li>Maintaining contingency reserves for emergencies</li>
+        <li>Using short-term financing only when necessary</li>
+      </ul>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Operational Finance Strategies</h2>
+      <p>Day-to-day financial decisions impact efficiency and profitability. Focus on:</p>
+      <ul>
+        <li>Staff scheduling and payroll efficiency</li>
+        <li>Supplier agreements and purchasing cycles</li>
+        <li>Tracking operational metrics through financial reporting tools</li>
+        <li>Managing insurance premiums and indemnity costs strategically</li>
+      </ul>
+
+      <h2>Aligning Operations with Growth</h2>
+      <p>Operational finance supports strategic expansion. Coordinating working capital with investment, equipment upgrades, and loan repayments ensures smooth growth without overextending resources.</p>
+
+      <div class="ad-slot">Future AdSense / Lead placement</div>
+    </section>
+  </main>
+</div>
+<div id="footer-placeholder"></div>
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{
+      if(id==='header-placeholder'){
+        const menuToggle=document.getElementById('menu-toggle');
+        const mainNav=document.getElementById('main-nav');
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+          const navItems=mainNav.querySelectorAll('li > a');
+          navItems.forEach(item=>{
+            item.addEventListener('click',function(e){
+              const submenu=this.nextElementSibling;
+              if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+                e.preventDefault();
+                submenu.style.display=submenu.style.display==='block'?'none':'block';
+              }
+            });
+          });
+        }
+      }
+    });
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+</body>
+</html>
