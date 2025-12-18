@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | DentalLab.co.uk</title>
+<meta name="description" content="Contact DentalLab.co.uk for independent guidance on dental practice finance, insurance, and tax planning for UK dentists.">
+<meta name="keywords" content="contact, dental finance, dentist support, UK dental advice, email contact">
+
+<!-- Link to shared CSS -->
+<link rel="stylesheet" href="/css/styles.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+
+<body>
+
+<!-- Header include -->
+<div id="header-placeholder"></div>
+
+<!-- Page content -->
+<div class="page-wrapper">
+  <main>
+    <section class="hero">
+      <h1>Contact DentalLab.co.uk</h1>
+      <p>Have questions or need guidance on dental practice finance, insurance, or tax? Fill out the form below, and we’ll get back to you promptly.</p>
+    </section>
+
+    <section class="content">
+      <h2>Contact Form</h2>
+      <form action="mailto:dentalsfx@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+        <input type="submit" value="Send Message">
+        <input type="reset" value="Clear">
+      </form>
+
+      <p>Alternatively, you can email us directly at <a href="mailto:dentalsfx@gmail.com">dentalsfx@gmail.com</a>.</p>
+    </section>
+  </main>
+</div>
+
+<!-- Footer include -->
+<div id="footer-placeholder"></div>
+
+<!-- JavaScript to load header/footer and toggle mobile menu -->
+<script>
+// Load header and footer
+function loadInclude(id, url){
+  fetch(url)
+    .then(response => response.text())
+    .then(data => document.getElementById(id).innerHTML = data)
+    .then(() => {
+      if(id === 'header-placeholder'){
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click', () => {
+            mainNav.style.display = mainNav.style.display === 'flex' ? 'none' : 'flex';
+          });
+          const navItems = mainNav.querySelectorAll('li > a');
+          navItems.forEach(item => {
+            item.addEventListener('click', function(e){
+              const submenu = this.nextElementSibling;
+              if(submenu && submenu.tagName === 'UL' && window.innerWidth <= 900){
+                e.preventDefault();
+                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+              }
+            });
+          });
+        }
+      }
+    });
+}
+
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+
+</body>
+</html>
