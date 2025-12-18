@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<?php include $_SERVER['DOCUMENT_ROOT'].'/includes/header.html'; ?>
+<div id="header-placeholder"></div>
 
 <div class="page-wrapper home">
   <main>
@@ -46,8 +46,47 @@
   </main>
 </div>
 
-<?php include $_SERVER['DOCUMENT_ROOT'].'/includes/header-scripts.html'; ?>
-<?php include $_SERVER['DOCUMENT_ROOT'].'/includes/footer.html'; ?>
+<script>
+// Function to load HTML into a placeholder
+function loadInclude(id, url) {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) throw new Error('Network response was not ok');
+      return response.text();
+    })
+    .then(html => document.getElementById(id).innerHTML = html)
+    .catch(error => console.error('Error loading include:', error));
+}
 
+// Load header and footer
+loadInclude('header-placeholder', '/includes/header.html');
+loadInclude('footer-placeholder', '/includes/footer.html');
+
+// Mobile menu toggle (copied from header-scripts)
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('#header-placeholder .menu-toggle');
+  const mainNav = document.querySelector('#header-placeholder .main-nav');
+
+  if(menuToggle && mainNav){
+    menuToggle.addEventListener('click', () => {
+      mainNav.style.display = mainNav.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    // Mobile submenu toggle
+    const navItems = mainNav.querySelectorAll('li > a');
+    navItems.forEach(item => {
+      item.addEventListener('click', function(e){
+        const submenu = this.nextElementSibling;
+        if(submenu && submenu.tagName === 'UL' && window.innerWidth <= 900){
+          e.preventDefault();
+          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+      });
+    });
+  }
+});
+</script>
+
+<div id="footer-placeholder"></div>
 </body>
 </html>
