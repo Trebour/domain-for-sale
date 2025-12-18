@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Conditions – DentalLab.co.uk</title>
+<meta name="description" content="Terms and Conditions for DentalLab.co.uk. Understand your rights, obligations, and usage rules for accessing content and resources on our website.">
+<meta name="keywords" content="DentalLab.co.uk terms, dental website usage, website rules, user agreement, liability disclaimer">
+
+<!-- Link to shared CSS -->
+<link rel="stylesheet" href="/css/styles.css">
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+
+<body>
+
+<!-- Header include -->
+<div id="header-placeholder"></div>
+
+<!-- Page content -->
+<div class="page-wrapper home">
+  <main>
+    <section class="hero">
+      <h1>Terms & Conditions – Using DentalLab.co.uk</h1>
+      <p>Welcome to DentalLab.co.uk. By accessing or using this website, you agree to comply with our Terms & Conditions. Please read these terms carefully, as they govern your use of our content, services, and resources.</p>
+    </section>
+
+    <section class="content">
+      <h2>1. Acceptance of Terms</h2>
+      <p>By using DentalLab.co.uk, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions. If you do not agree, you must immediately stop using the site.</p>
+
+      <h2>2. Website Content & Usage</h2>
+      <p>The content on DentalLab.co.uk, including articles, guides, tools, and images, is provided for informational and educational purposes for dental professionals in the UK. You may use this content for personal, professional research and reference only. Republishing, distributing, or commercial use without prior written permission is strictly prohibited.</p>
+
+      <h2>3. Intellectual Property</h2>
+      <p>All content, graphics, logos, and branding on DentalLab.co.uk are protected by copyright and other intellectual property laws. You may not copy, modify, reproduce, or create derivative works without explicit permission from DentalLab.co.uk.</p>
+
+      <h2>4. User Conduct</h2>
+      <p>Users agree not to:</p>
+      <ul>
+        <li>Access the site through unauthorized means, including automated systems or bots</li>
+        <li>Post or transmit content that is illegal, offensive, defamatory, or harmful to others</li>
+        <li>Attempt to interfere with or disrupt website functionality or servers</li>
+      </ul>
+
+      <h2>5. Third-Party Links</h2>
+      <p>DentalLab.co.uk may contain links to third-party websites for reference or convenience. We do not control these sites and are not responsible for their content, privacy practices, or accuracy. Linking does not imply endorsement.</p>
+
+      <h2>6. Advertising & Affiliate Links</h2>
+      <p>Our website may display advertisements and affiliate links, including Google AdSense. These links may result in compensation to DentalLab.co.uk if you engage with them. Advertisers are responsible for their own content, and inclusion does not constitute endorsement.</p>
+
+      <h2>7. Limitation of Liability</h2>
+      <p>DentalLab.co.uk provides information for educational purposes. While we aim for accuracy, we cannot guarantee completeness or error-free content. Users are responsible for decisions made based on site information. DentalLab.co.uk is not liable for any direct, indirect, incidental, or consequential damages arising from your use of the site or reliance on its content.</p>
+
+      <h2>8. Indemnity</h2>
+      <p>You agree to indemnify, defend, and hold harmless DentalLab.co.uk, its affiliates, and contributors from any claims, damages, or expenses resulting from your use of the site or violation of these Terms & Conditions.</p>
+
+      <h2>9. Privacy & Data</h2>
+      <p>Your use of this site is also governed by our <a href="/privacy-policy/">Privacy Policy</a>. We respect your data, and any personal information submitted through forms will be handled in accordance with GDPR and UK data protection laws.</p>
+
+      <h2>10. Changes to Terms</h2>
+      <p>DentalLab.co.uk may update these Terms & Conditions at any time without prior notice. Changes will be reflected on this page. Continued use of the website constitutes acceptance of the revised terms.</p>
+
+      <h2>11. Governing Law</h2>
+      <p>These Terms & Conditions are governed by the laws of England and Wales. Any disputes arising from the use of this website shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+      <h2>12. Contact</h2>
+      <p>If you have questions regarding these Terms & Conditions, please contact us via our <a href="/contact/">Contact Page</a>.</p>
+
+      <div class="ad-slot">Future AdSense / Lead placement</div>
+    </section>
+  </main>
+</div>
+
+<!-- Footer include -->
+<div id="footer-placeholder"></div>
+
+<!-- JavaScript to load header/footer and toggle mobile menu -->
+<script>
+// Load header and footer
+function loadInclude(id, url){
+  fetch(url)
+    .then(response => response.text())
+    .then(data => document.getElementById(id).innerHTML = data)
+    .then(() => {
+      if(id === 'header-placeholder'){
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click', () => {
+            mainNav.style.display = mainNav.style.display === 'flex' ? 'none' : 'flex';
+          });
+
+          const navItems = mainNav.querySelectorAll('li > a');
+          navItems.forEach(item => {
+            item.addEventListener('click', function(e){
+              const submenu = this.nextElementSibling;
+              if(submenu && submenu.tagName === 'UL' && window.innerWidth <= 900){
+                e.preventDefault();
+                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+              }
+            });
+          });
+        }
+      }
+    });
+}
+
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+
+</body>
+</html>
