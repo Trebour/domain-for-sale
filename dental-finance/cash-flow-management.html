@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cash Flow Management for UK Dentists – Optimizing Income & Expenses | DentalLab.co.uk</title>
+<meta name="description" content="Learn how UK dental practices can manage cash flow effectively, track revenue streams, and maintain financial stability while planning for growth.">
+<meta name="keywords" content="cash flow management, dental practice finance, UK dentists, revenue tracking, financial planning">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+<div class="page-wrapper">
+  <main>
+    <section class="hero">
+      <h1>Cash Flow Management for UK Dentists</h1>
+      <p>Learn how dental practices in the UK can optimize cash flow, manage expenses, and maintain operational stability while planning for future growth.</p>
+    </section>
+
+    <section class="content">
+      <h2>Why Cash Flow Matters</h2>
+      <p>Maintaining a healthy cash flow ensures your practice can meet day-to-day obligations, fund staff payroll, and invest in growth. Cash flow management helps you anticipate slow periods, plan for seasonal demand, and avoid financial stress.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Tracking Income Streams</h2>
+      <p>UK dental practices often have mixed revenue sources: NHS contracts, private patients, and treatments. Monitoring each stream separately allows you to spot trends and forecast income accurately.</p>
+      <ul>
+        <li>Record revenue by service type and patient category</li>
+        <li>Monitor recurring income vs one-off procedures</li>
+        <li>Use software tools to generate financial dashboards</li>
+      </ul>
+
+      <h2>Managing Expenses</h2>
+      <p>Controlling costs is as important as tracking income. Key strategies include:</p>
+      <ul>
+        <li>Regular review of supplier agreements</li>
+        <li>Optimizing inventory and equipment usage</li>
+        <li>Careful scheduling of staff to balance productivity and cost</li>
+      </ul>
+
+      <h2>Planning for Growth</h2>
+      <p>Cash flow management is not just operational—it's strategic. Use forecasts to plan for practice expansion, equipment investment, and staff development. Link your cash flow strategy with business loans, equipment financing, and tax planning to maximize impact.</p>
+
+      <div class="ad-slot">Future AdSense / Lead placement</div>
+    </section>
+  </main>
+</div>
+<div id="footer-placeholder"></div>
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{
+      if(id==='header-placeholder'){
+        const menuToggle=document.getElementById('menu-toggle');
+        const mainNav=document.getElementById('main-nav');
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+          const navItems=mainNav.querySelectorAll('li > a');
+          navItems.forEach(item=>{
+            item.addEventListener('click',function(e){
+              const submenu=this.nextElementSibling;
+              if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+                e.preventDefault();
+                submenu.style.display=submenu.style.display==='block'?'none':'block';
+              }
+            });
+          });
+        }
+      }
+    });
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+</body>
+</html>
