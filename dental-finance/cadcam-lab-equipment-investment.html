@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAD/CAM & Lab Equipment Investment for UK Dentists | DentalLab.co.uk</title>
+<meta name="description" content="Guidance on investing in CAD/CAM systems and lab equipment for UK dental practices, improving efficiency, patient care, and workflow integration.">
+<meta name="keywords" content="CAD/CAM investment, lab equipment, dental practice technology, UK dentists, dental finance">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper home">
+  <main>
+    <section class="hero">
+      <h1>CAD/CAM & Lab Equipment Investment – Modern Dentistry Solutions</h1>
+      <p>Investing in CAD/CAM systems and lab equipment helps UK dental practices improve precision, efficiency, and patient care.</p>
+    </section>
+
+    <section class="content">
+      <h2>Understanding CAD/CAM & Lab Equipment Investment</h2>
+      <p>High-quality lab equipment and digital solutions enhance clinical outcomes and operational efficiency.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Financing Options</h2>
+      <ul>
+        <li>Lease or hire purchase agreements (<a href="/dental-finance/dental-equipment-finance.html">Dental Equipment Finance</a>)</li>
+        <li>Integrating investment with practice loans (<a href="/dental-finance/practice-loans-overview.html">Practice Loans Overview</a>)</li>
+        <li>Aligning repayments with cash flow (<a href="/dental-finance/cash-flow-management.html">Cash Flow Management</a>)</li>
+      </ul>
+
+      <h2>Benefits for Dental Practices</h2>
+      <ul>
+        <li>Increased precision in restorations</li>
+        <li>Enhanced patient experience</li>
+        <li>Improved workflow efficiency</li>
+      </ul>
+
+      <div class="ad-slot">Future AdSense / Lead placement</div>
+    </section>
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{if(id==='header-placeholder'){
+      const menuToggle=document.getElementById('menu-toggle');
+      const mainNav=document.getElementById('main-nav');
+      if(menuToggle && mainNav){
+        menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+        const navItems=mainNav.querySelectorAll('li > a');
+        navItems.forEach(item=>{item.addEventListener('click',function(e){
+          const submenu=this.nextElementSibling;
+          if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+            e.preventDefault();
+            submenu.style.display=submenu.style.display==='block'?'none':'block';
+          }
+        });});
+      }
+    }});
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+</body>
+</html>
 
