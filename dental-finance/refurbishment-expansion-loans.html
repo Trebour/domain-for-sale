@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refurbishment & Expansion Loans for UK Dentists | DentalLab.co.uk</title>
+<meta name="description" content="Guidance on refurbishment and expansion loans for UK dental practices, helping practice owners renovate, expand, and upgrade facilities efficiently.">
+<meta name="keywords" content="refurbishment loans, expansion loans, dental practice finance, UK dentists, clinic renovation">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper home">
+  <main>
+    <section class="hero">
+      <h1>Refurbishment & Expansion Loans – Growing Your Dental Practice</h1>
+      <p>Explore options for funding renovations, expansions, and modernization projects in UK dental practices with tailored loan solutions.</p>
+    </section>
+
+    <section class="content">
+      <h2>Why Consider Refurbishment & Expansion Loans</h2>
+      <p>Loans for refurbishment and expansion help dentists upgrade facilities, improve patient experience, and increase capacity without large capital outlay.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Loan Eligibility & Considerations</h2>
+      <ul>
+        <li>Practice profitability and historical performance</li>
+        <li>Projected patient growth and revenue impact</li>
+        <li>Integration with other financing (<a href="/dental-finance/practice-loans-overview.html">Practice Loans Overview</a>)</li>
+      </ul>
+
+      <h2>Integration with Equipment Financing</h2>
+      <p>Refurbishment loans can be combined with <a href="/dental-finance/dental-equipment-finance.html">Dental Equipment Finance</a> for full practice upgrades.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Linking to Cash Flow & Working Capital</h2>
+      <p>Plan repayment structures with cash flow (<a href="/dental-finance/cash-flow-management.html">Cash Flow Management</a>) and working capital (<a href="/dental-finance/working-capital-strategies.html">Working Capital Strategies</a>) in mind.</p>
+
+      <div class="ad-slot">Future AdSense / Lead placement</div>
+    </section>
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{if(id==='header-placeholder'){
+      const menuToggle=document.getElementById('menu-toggle');
+      const mainNav=document.getElementById('main-nav');
+      if(menuToggle && mainNav){
+        menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+        const navItems=mainNav.querySelectorAll('li > a');
+        navItems.forEach(item=>{item.addEventListener('click',function(e){
+          const submenu=this.nextElementSibling;
+          if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+            e.preventDefault();
+            submenu.style.display=submenu.style.display==='block'?'none':'block';
+          }
+        });});
+      }
+    }});
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+</body>
+</html>
 
