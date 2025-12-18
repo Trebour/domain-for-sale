@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Finance Guidance for UK Dentists | DentalLab.co.uk</title>
+<meta name="description" content="Comprehensive guidance for UK dental practices on managing business finances, including cash flow, working capital, and strategic investment planning.">
+<meta name="keywords" content="business finance, dental practice finance, UK dentists, financial planning, cash flow, working capital">
 
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper home">
+  <main>
+    <section class="hero">
+      <h1>Business Finance Guidance for UK Dentists</h1>
+      <p>Independent guidance on managing practice finances, cash flow, working capital, and strategic investments for sustainable growth.</p>
+    </section>
+
+    <section class="content">
+      <h2>Understanding Business Finance</h2>
+      <p>Effective business finance is the backbone of a successful dental practice. It ensures operational stability, supports strategic investment, and reduces risk.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Key Financial Areas</h2>
+      <ul>
+        <li>Cash flow management (<a href="/dental-finance/cash-flow-management.html">Cash Flow Management</a>)</li>
+        <li>Working capital optimisation (<a href="/dental-finance/working-capital-strategies.html">Working Capital Strategies</a>)</li>
+        <li>Structured lending (<a href="/dental-finance/practice-loans-overview.html">Practice Loans Overview</a>)</li>
+        <li>Equipment finance (<a href="/dental-finance/dental-equipment-finance.html">Dental Equipment Finance</a>)</li>
+      </ul>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Financial Planning Strategies</h2>
+      <ul>
+        <li>Forecast income and expenses accurately</li>
+        <li>Align investments with cash availability</li>
+        <li>Monitor KPI metrics and adjust operations accordingly</li>
+        <li>Integrate insurance and tax considerations (<a href="/dental-finance/insurance-tax-overview.html">Insurance & Tax Overview</a>)</li>
+      </ul>
+
+      <div class="ad-slot">Future AdSense / Lead placement</div>
+    </section>
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{if(id==='header-placeholder'){
+      const menuToggle=document.getElementById('menu-toggle');
+      const mainNav=document.getElementById('main-nav');
+      if(menuToggle && mainNav){
+        menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+        const navItems=mainNav.querySelectorAll('li > a');
+        navItems.forEach(item=>{item.addEventListener('click',function(e){
+          const submenu=this.nextElementSibling;
+          if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+            e.preventDefault();
+            submenu.style.display=submenu.style.display==='block'?'none':'block';
+          }
