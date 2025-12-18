@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Structures & Repayment Options for UK Dentists | DentalLab.co.uk</title>
+<meta name="description" content="Learn about loan structures and repayment options for dental practice loans in the UK, including fixed and variable rates, terms, and security considerations.">
+<meta name="keywords" content="loan structures, repayment options, dental practice loans, UK dentists, finance planning">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper home">
+  <main>
+    <section class="hero">
+      <h1>Loan Structures & Repayment Options for Dental Practices</h1>
+      <p>Comprehensive guidance on structuring dental practice loans, choosing interest types, repayment periods, and understanding security requirements in the UK.</p>
+    </section>
+
+    <section class="content">
+      <h2>Understanding Loan Structures</h2>
+      <p>Dental loans can be structured to suit practice needs, including fixed or variable interest rates, short or long-term repayment periods, and secured or unsecured options.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Interest Types</h2>
+      <ul>
+        <li>Fixed interest: predictable monthly repayments</li>
+        <li>Variable interest: may fluctuate with market rates</li>
+        <li>Blended options combining stability with flexibility</li>
+      </ul>
+
+      <h2>Repayment Periods</h2>
+      <ul>
+        <li>Short-term: faster repayment, lower total interest, higher monthly cost</li>
+        <li>Long-term: lower monthly payments, higher total interest</li>
+      </ul>
+
+      <h2>Security Considerations</h2>
+      <p>Loans may require security against:</p>
+      <ul>
+        <li>Practice property or assets</li>
+        <li>Equipment purchased via finance (<a href="/dental-finance/dental-equipment-finance.html">Dental Equipment Finance</a>)</li>
+      </ul>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Integration with Practice Finance</h2>
+      <p>Loan structures should integrate with cash flow (<a href="/dental-finance/cash-flow-management.html">Cash Flow Management</a>), working capital (<a href="/dental-finance/working-capital-strategies.html">Working Capital Strategies</a>), and acquisition or refurbishment plans (<a href="/dental-finance/refurbishment-expansion-loans.html">Refurbishment & Expansion Loans</a>).</p>
+
+      <div class="ad-slot">Future AdSense / Lead placement</div>
+    </section>
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{if(id==='header-placeholder'){
+      const menuToggle=document.getElementById('menu-toggle');
+      const mainNav=document.getElementById('main-nav');
+      if(menuToggle && mainNav){
+        menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+        const navItems=mainNav.querySelectorAll('li > a');
+        navItems.forEach(item=>{item.addEventListener('click',function(e){
+          const submenu=this.nextElementSibling;
+          if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+            e.preventDefault();
+            submenu.style.display=submenu.style.display==='block'?'none':'block';
+          }
+        });});
+      }
+    }});
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+</body>
+</html>
 
