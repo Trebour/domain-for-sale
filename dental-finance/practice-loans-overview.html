@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice Loans Overview – Funding Options for UK Dentists | DentalLab.co.uk</title>
+<meta name="description" content="Explore an overview of practice loans for UK dentists, including acquisition, refurbishment, and equipment financing to grow your dental practice.">
+<meta name="keywords" content="practice loans, dental finance, UK dentists, acquisition loans, refurbishment loans, equipment finance">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper home">
+  <main>
+    <section class="hero">
+      <h1>Practice Loans Overview – Funding Your Dental Practice</h1>
+      <p>Comprehensive guidance on practice loans for UK dentists, including acquisition, refurbishment, and equipment finance to support growth and long-term stability.</p>
+    </section>
+
+    <section class="content">
+      <h2>Understanding Practice Loans</h2>
+      <p>Practice loans are tailored financial products for dentists to acquire new clinics, renovate existing practices, or invest in essential equipment. Unlike generic business loans, they consider NHS and private patient revenue, associate arrangements, and practice profitability.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Types of Loans Covered</h2>
+      <ul>
+        <li><a href="/dental-finance/refurbishment-expansion-loans.html">Refurbishment & Expansion Loans</a></li>
+        <li><a href="/dental-finance/dental-equipment-finance.html">Dental Equipment Finance</a></li>
+        <li><a href="/dental-finance/practice-acquisition-finance.html">Practice Acquisition Finance</a></li>
+        <li><a href="/dental-finance/loan-structures-repayment.html">Loan Structures & Repayment Options</a></li>
+      </ul>
+
+      <h2>Why Practice Loans Matter</h2>
+      <p>Structured funding helps dentists:</p>
+      <ul>
+        <li>Purchase or expand a practice without depleting personal capital</li>
+        <li>Upgrade equipment to maintain high clinical standards</li>
+        <li>Manage short-term cash flow through working capital loans (<a href="/dental-finance/working-capital-strategies.html">Working Capital Strategies</a>)</li>
+        <li>Plan growth with predictable repayment structures</li>
+      </ul>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Linking Loans with Overall Finance</h2>
+      <p>Practice loans should integrate with cash flow management (<a href="/dental-finance/cash-flow-management.html">Cash Flow Management</a>), insurance, tax planning (<a href="/dental-finance/insurance-tax-overview.html">Insurance & Tax Overview</a>), and equipment investment (<a href="/dental-finance/dental-equipment-finance.html">Dental Equipment Finance</a>).</p>
+
+      <div class="ad-slot">Future AdSense / Lead placement</div>
+    </section>
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{if(id==='header-placeholder'){
+      const menuToggle=document.getElementById('menu-toggle');
+      const mainNav=document.getElementById('main-nav');
+      if(menuToggle && mainNav){
+        menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+        const navItems=mainNav.querySelectorAll('li > a');
+        navItems.forEach(item=>{item.addEventListener('click',function(e){
+          const submenu=this.nextElementSibling;
+          if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+            e.preventDefault();
+            submenu.style.display=submenu.style.display==='block'?'none':'block';
+          }
+        });});
+      }
+    }});
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+</body>
+</html>
 
