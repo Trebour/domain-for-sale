@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice Acquisition Finance for UK Dentists | DentalLab.co.uk</title>
+<meta name="description" content="Guidance on financing the acquisition of a dental practice in the UK, including loan types, lender considerations, and strategic planning.">
+<meta name="keywords" content="practice acquisition, dental finance, UK dentists, practice loans, business expansion">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper home">
+  <main>
+    <section class="hero">
+      <h1>Practice Acquisition Finance – Funding New or Existing Clinics</h1>
+      <p>Explore financing options to acquire a dental practice in the UK, including loans, repayment planning, and lender considerations.</p>
+    </section>
+
+    <section class="content">
+      <h2>Why Practice Acquisition Finance is Important</h2>
+      <p>Acquiring a dental practice is a major financial decision. Proper financing ensures growth, protects personal assets, and maintains operational stability.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Loan Options for Acquisition</h2>
+      <ul>
+        <li>Acquisition loans (<a href="/dental-finance/practice-loans-overview.html">Practice Loans Overview</a>)</li>
+        <li>Structured financing integrated with working capital (<a href="/dental-finance/working-capital-strategies.html">Working Capital Strategies</a>)</li>
+      </ul>
+
+      <h2>Lender Considerations</h2>
+      <ul>
+        <li>Historical profitability and revenue mix</li>
+        <li>Staffing and associate agreements</li>
+        <li>Lease and property obligations</li>
+      </ul>
+
+      <h2>Planning for Growth</h2>
+      <ul>
+        <li>Link acquisition financing with equipment investments (<a href="/dental-finance/dental-equipment-finance.html">Dental Equipment Finance</a>)</li>
+        <li>Align cash flow forecasts (<a href="/dental-finance/cash-flow-management.html">Cash Flow Management</a>)</li>
+        <li>Incorporate tax and insurance considerations (<a href="/dental-finance/insurance-tax-overview.html">Insurance & Tax Overview</a>)</li>
+      </ul>
+
+      <div class="ad-slot">Future AdSense / Lead placement</div>
+    </section>
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{if(id==='header-placeholder'){
+      const menuToggle=document.getElementById('menu-toggle');
+      const mainNav=document.getElementById('main-nav');
+      if(menuToggle && mainNav){
+        menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+        const navItems=mainNav.querySelectorAll('li > a');
+        navItems.forEach(item=>{item.addEventListener('click',function(e){
+          const submenu=this.nextElementSibling;
+          if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+            e.preventDefault();
+            submenu.style.display=submenu.style.display==='block'?'none':'block';
+          }
+        });});
+      }
+    }});
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+</body>
+</html>
 
