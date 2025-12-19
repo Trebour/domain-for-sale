@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduction to CAD/CAM Dentistry for UK Practices | DentalLab.co.uk</title>
+<meta name="description" content="Learn the fundamentals of CAD/CAM dentistry for UK dental practices. Explore digital workflows, equipment options, and benefits for efficiency and patient care.">
+<meta name="keywords" content="CAD/CAM dentistry, digital dentistry, dental lab equipment, UK dental practices, intraoral scanners, dental technology">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper">
+  <main>
+<section class="hero">
+  <h1>Introduction to CAD/CAM Dentistry for UK Practices</h1>
+  <p>CAD/CAM (Computer-Aided Design and Computer-Aided Manufacturing) technology is transforming dental practices by allowing precise, in-house production of restorations. This guide introduces CAD/CAM fundamentals, digital workflows, and key benefits for UK dental practices.</p>
+</section>
+
+<section class="content">
+  <h2>Understanding CAD/CAM Technology</h2>
+  <p>CAD/CAM dentistry combines digital scanning, computer-aided design, and manufacturing to produce crowns, bridges, veneers, and implant restorations efficiently. These systems reduce turnaround times, improve accuracy, and enhance patient satisfaction. Digital impressions minimize errors and eliminate the need for traditional molds.</p>
+
+  <div class="ad-slot">In‑content AdSense placement</div>
+
+  <h2>Benefits of CAD/CAM for Dental Practices</h2>
+  <ul>
+    <li>Faster restoration production, often same-day delivery</li>
+    <li>Improved precision and fit for crowns, bridges, and implants</li>
+    <li>Enhanced patient experience and satisfaction</li>
+    <li>Reduced reliance on external dental labs</li>
+  </ul>
+
+  <div class="ad-slot">In‑content AdSense placement</div>
+
+  <h2>Digital Workflow Considerations</h2>
+  <ul>
+    <li>Integrating intraoral scanners with practice management software</li>
+    <li>Staff training on digital impression capture and CAD design</li>
+    <li>Compatibility with milling machines and 3D printers</li>
+    <li>Maintenance schedules and software updates</li>
+  </ul>
+
+  <div class="ad-slot">In‑content AdSense placement</div>
+
+  <h2>Supporting Resources</h2>
+  <ul>
+    <li><a href="/dental-services/cad-cam/in-house-lab-equipment.html">In-House Lab Equipment Essentials</a></li>
+    <li><a href="/dental-services/cad-cam/digital-impressions.html">Digital Impressions & Scanning Technology</a></li>
+    <li><a href="/dental-services/cad-cam/cost-roi-analysis.html">Cost & ROI Analysis for CAD/CAM Investments</a></li>
+  </ul>
+
+  <div class="ad-slot">Future AdSense / Lead placement</div>
+</section>
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+<script>
+function loadInclude(id,url){
+  fetch(url).then(r=>r.text()).then(data=>document.getElementById(id).innerHTML=data).then(()=>{
+    if(id==='header-placeholder'){
+      const menuToggle=document.getElementById('menu-toggle');
+      const mainNav=document.getElementById('main-nav');
+      if(menuToggle && mainNav){
+        menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+        const navItems=mainNav.querySelectorAll('li > a');
+        navItems.forEach(item=>{
+          item.addEventListener('click',function(e){
+            const submenu=this.nextElementSibling;
+            if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+              e.preventDefault();
+              submenu.style.display=submenu.style.display==='block'?'none':'block';
+            }
+          });
+        });
+      }
+    }
+  });
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+
+</body>
+</html>
