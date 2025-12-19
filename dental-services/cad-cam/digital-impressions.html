@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Impressions & Scanning Technology for UK Dental Practices | DentalLab.co.uk</title>
+<meta name="description" content="Learn about digital impressions and scanning technology for UK dental practices, including intraoral scanners, desktop scanners, and workflow integration.">
+<meta name="keywords" content="digital impressions, dental scanning technology, intraoral scanners, desktop scanners, CAD/CAM dentistry, UK dental practices">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper">
+  <main>
+<section class="hero">
+  <h1>Digital Impressions & Scanning Technology for UK Dental Practices</h1>
+  <p>Digital impressions and scanning technologies are transforming dental workflows. Intraoral and desktop scanners increase accuracy, reduce patient discomfort, and integrate seamlessly with CAD/CAM systems for in-house or external lab production.</p>
+</section>
+
+<section class="content">
+  <h2>Why Digital Impressions Matter</h2>
+  <p>Traditional impressions can be time-consuming, messy, and prone to errors. Digital scanners improve clinical efficiency, enhance patient comfort, and reduce remakes. They also integrate with CAD/CAM systems to enable same-day restorations and streamlined lab workflows.</p>
+
+  <div class="ad-slot">In‑content AdSense placement</div>
+
+  <h2>Types of Scanning Technology</h2>
+  <ul>
+    <li><strong>Intraoral Scanners:</strong> Capture precise 3D images of the patient's teeth and soft tissues directly in the mouth.</li>
+    <li><strong>Desktop Scanners:</strong> Scan impressions, models, or dies in the laboratory environment for CAD/CAM processing.</li>
+    <li><strong>Hybrid Systems:</strong> Combine intraoral and desktop scanning capabilities for flexible workflows.</li>
+  </ul>
+
+  <div class="ad-slot">In‑content AdSense placement</div>
+
+  <h2>Integrating Scanning into the Workflow</h2>
+  <ul>
+    <li>Ensure compatibility between scanners, CAD software, and milling or 3D printing equipment.</li>
+    <li>Train clinicians and lab staff on scanning techniques to minimize errors and optimize data capture.</li>
+    <li>Implement quality control protocols to verify accuracy and fit before manufacturing restorations.</li>
+    <li>Leverage cloud storage or local servers for secure data management and GDPR compliance.</li>
+  </ul>
+
+  <div class="ad-slot">In‑content AdSense placement</div>
+
+  <h2>Supporting Resources</h2>
+  <ul>
+    <li><a href="/dental-services/cad-cam/introduction-cad-cam.html">Introduction to CAD/CAM Dentistry</a></li>
+    <li><a href="/dental-services/cad-cam/in-house-lab-equipment.html">In-House Lab Equipment Essentials</a></li>
+    <li><a href="/dental-services/cad-cam/cost-roi-analysis.html">Cost & ROI Analysis for CAD/CAM Investments</a></li>
+  </ul>
+
+  <div class="ad-slot">Future AdSense / Lead placement</div>
+</section>
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+<script>
+function loadInclude(id,url){
+  fetch(url).then(r=>r.text()).then(data=>document.getElementById(id).innerHTML=data).then(()=>{
+    if(id==='header-placeholder'){
+      const menuToggle=document.getElementById('menu-toggle');
+      const mainNav=document.getElementById('main-nav');
+      if(menuToggle && mainNav){
+        menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+        const navItems=mainNav.querySelectorAll('li > a');
+        navItems.forEach(item=>{
+          item.addEventListener('click',function(e){
+            const submenu=this.nextElementSibling;
+            if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+              e.preventDefault();
+              submenu.style.display=submenu.style.display==='block'?'none':'block';
+            }
+          });
+        });
+      }
+    }
+  });
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+
+</body>
+</html>
