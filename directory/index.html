@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dental Directory – UK Dental Suppliers & Services | DentalLab.co.uk</title>
+<meta name="description" content="The DentalLab.co.uk directory will list trusted UK dental suppliers, labs, finance providers, and professional services. Coming soon.">
+<meta name="keywords" content="dental directory UK, dental suppliers, dental labs UK, dental finance providers">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+
+<body>
+
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper home">
+  <main>
+    <section class="hero">
+      <h1>Dental Directory for UK Practices</h1>
+      <p>A curated directory of dental suppliers, laboratories, finance providers, and professional services supporting UK dental practices.</p>
+    </section>
+
+    <section class="content">
+
+      <h2>Directory Coming Soon</h2>
+      <p>
+        We’re building a structured directory designed to help UK dentists quickly find trusted suppliers and service providers relevant to their practice.
+      </p>
+
+      <p>
+        The directory will include listings for:
+      </p>
+
+      <ul>
+        <li>Dental laboratories and CAD/CAM providers</li>
+        <li>Equipment and technology suppliers</li>
+        <li>Practice finance and lending specialists</li>
+        <li>Insurance, indemnity, and tax advisors</li>
+        <li>Legal and compliance services for dentists</li>
+      </ul>
+
+      <div class="ad-slot">Future Directory Listings</div>
+
+      <h2>Independent & Informational</h2>
+      <p>
+        Listings will focus on relevance and transparency. Inclusion will not constitute endorsement, and the directory will be designed to support informed decision-making rather than sales-driven promotion.
+      </p>
+
+      <p>
+        While the directory is under development, you may find useful guidance in:
+      </p>
+
+      <ul>
+        <li><a href="/dental-finance/">Dental Finance Hub</a></li>
+        <li><a href="/dental-services/">Dental Equipment & Services</a></li>
+        <li><a href="/dental-legal/">Dental Legal Guidance</a></li>
+      </ul>
+
+    </section>
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{
+      if(id==='header-placeholder'){
+        const menuToggle=document.getElementById('menu-toggle');
+        const mainNav=document.getElementById('main-nav');
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+        }
+      }
+    });
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+
+</body>
+</html>
