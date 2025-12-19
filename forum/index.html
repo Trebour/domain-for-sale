@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dental Forum – Community Discussions for UK Dentists | DentalLab.co.uk</title>
+<meta name="description" content="The DentalLab.co.uk forum will be a community space for UK dentists to discuss finance, practice management, equipment, and professional topics. Coming soon.">
+<meta name="keywords" content="dental forum UK, dentist community, dental discussions, UK dentists forum">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+
+<body>
+
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper home">
+  <main>
+    <section class="hero">
+      <h1>Dental Forum for UK Dentists</h1>
+      <p>A dedicated community space for UK dentists to share insights, ask questions, and discuss clinical, financial, and practice management topics.</p>
+    </section>
+
+    <section class="content">
+
+      <h2>Forum Coming Soon</h2>
+      <p>
+        We’re currently developing the DentalLab.co.uk forum to provide a professional, moderated discussion space exclusively for UK dentists and practice owners.
+      </p>
+
+      <p>
+        The forum will support discussions around:
+      </p>
+
+      <ul>
+        <li>Practice finance, loans, and cash flow management</li>
+        <li>Buying, selling, or expanding dental practices</li>
+        <li>Equipment, technology, and lab services</li>
+        <li>Insurance, indemnity, and regulatory considerations</li>
+        <li>Day-to-day practice management and growth strategies</li>
+      </ul>
+
+      <div class="ad-slot">Future Community Feature</div>
+
+      <h2>Our Aim</h2>
+      <p>
+        The goal is to create a high-quality, spam-free environment where dentists can exchange real-world experience, learn from peers, and stay informed about changes affecting the profession.
+      </p>
+
+      <p>
+        Until launch, we recommend exploring our existing guidance across:
+      </p>
+
+      <ul>
+        <li><a href="/dental-finance/">Dental Finance</a></li>
+        <li><a href="/dental-legal/">Dental Legal</a></li>
+        <li><a href="/dental-services/">Dental Services & Equipment</a></li>
+      </ul>
+
+    </section>
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{
+      if(id==='header-placeholder'){
+        const menuToggle=document.getElementById('menu-toggle');
+        const mainNav=document.getElementById('main-nav');
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+        }
+      }
+    });
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+
+</body>
+</html>
