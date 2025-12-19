@@ -3,377 +3,151 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dental Services Hub – DentalLab.co.uk</title>
-<meta name="description" content="DentalLab.co.uk Services Hub provides guidance on dental SaaS, CAD/CAM equipment, marketing, and training for UK dental practices.">
-<meta name="keywords" content="dental services, dental SaaS, dental software, CAD/CAM, lab equipment, marketing, training, UK dentists, practice management">
+<title>Dental Services Hub – SaaS, CAD/CAM & Marketing Guidance for UK Dentists | DentalLab.co.uk</title>
+<meta name="description" content="Comprehensive guidance for UK dentists on dental SaaS, CAD/CAM equipment, marketing strategies, and team training. Improve efficiency, patient care, and practice growth.">
+<meta name="keywords" content="dental services, dental SaaS, CAD/CAM dentistry, dental marketing, dental staff training, UK dentists, practice management">
 
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/styles.css">
 
-<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);} 
+function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-KZ05YBGCP3');
 </script>
-
-<style>
-body {
-  margin:0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f7fa;
-  color: #1f2a44;
-  line-height: 1.6;
-}
-
-/* HEADER */
-header {
-  background: linear-gradient(90deg, #3da2ff, #1f5bc2);
-  padding: 10px 20px;
-  color: white;
-}
-
-header .logo {
-  font-weight: bold;
-  font-size: 24px;
-}
-
-/* Nav container */
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* Main nav */
-.main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin:0;
-  padding:0;
-}
-
-.main-nav li {
-  position: relative;
-}
-
-.main-nav > li {
-  margin-left: 30px;
-}
-
-.main-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 5px;
-  display: block;
-}
-
-.main-nav a:hover {
-  color: #ffeb3b;
-}
-
-/* Dropdown */
-.main-nav li ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left:0;
-  background: white;
-  color: #1f2a44;
-  min-width: 200px;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  z-index: 999;
-}
-
-.main-nav li ul li {
-  margin:0;
-}
-
-.main-nav li ul li a {
-  color: #1f2a44;
-  padding: 10px 15px;
-}
-
-.main-nav li ul li a:hover {
-  background: #f0f6ff;
-  color: #3da2ff;
-}
-
-/* Show dropdown on hover - desktop */
-@media(min-width: 901px){
-  .main-nav li:hover > ul {
-    display: block;
-  }
-}
-
-/* HERO & PAGE */
-.page-wrapper {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 40px;
-}
-
-/* Centered page fix */
-.page-wrapper.centered {
-  display: block;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.hero {
-  background: #ffffff;
-  padding: 50px;
-  border-radius: 8px;
-  border:1px solid #d6dce8;
-  margin-bottom:40px;
-}
-
-h1 { margin-top:0; font-size:38px; }
-h2 { margin-top:40px; font-size:26px; }
-h3 { margin-top:30px; font-size:20px; }
-
-.content {
-  background: #ffffff;
-  padding:40px;
-  border-radius: 8px;
-  border:1px solid #d6dce8;
-}
-
-.sidebar {
-  background: #ffffff;
-  padding:30px;
-  border-radius:8px;
-  border:1px solid #d6dce8;
-  height: fit-content;
-}
-
-/* Hide sidebar for centered pages */
-.page-wrapper.centered .sidebar {
-  display: none;
-}
-
-.ad-slot {
-  background: #eef2f8;
-  border:1px dashed #b9c4d8;
-  padding:20px;
-  margin-bottom:30px;
-  text-align:center;
-  font-size:14px;
-  color:#4b5e82;
-}
-
-/* FOOTER */
-footer {
-  background: #ffffff;
-  border-top:1px solid #d6dce8;
-  padding:40px 20px;
-  text-align:center;
-  font-size:14px;
-  color:#4b5e82;
-}
-
-footer a { color:#4b5e82; margin:0 10px; }
-
-/* MOBILE MENU */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  height:3px;
-  width:25px;
-  background:white;
-  margin-bottom:5px;
-  border-radius:3px;
-}
-
-/* Mobile layout */
-@media(max-width:900px){
-  header .logo {
-    text-align:center;
-    width:100%;
-    margin-bottom:10px;
-  }
-
-  .nav-wrapper {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .menu-toggle {
-    display:flex;
-    margin-bottom:10px;
-  }
-
-  .main-nav {
-    flex-direction: column;
-    width: auto;
-    display: none;
-    align-items: flex-end;
-  }
-
-  .main-nav li {
-    margin-left:0;
-    width: 100%;
-  }
-
-  .main-nav li ul {
-    position: relative;
-  }
-}
-</style>
 </head>
-
 <body>
-<header>
-  <div class="logo">DentalLab.co.uk</div>
-  <div class="nav-wrapper">
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-<ul class="main-nav" id="main-nav">
-  <li><a href="/index.html">Home</a></li>
+<div id="header-placeholder"></div>
 
-  <li><a href="/dental-legal/index.html">Dental Legal</a>
-    <ul>
-      <li><a href="/dental-legal/index.html">Dental Legal Hub</a></li>
-      <li><a href="/dental-legal/dental-negligence.html">Dental Negligence</a></li>
-      <li><a href="/dental-legal/gdc-investigations.html">GDC Investigations</a></li>
-      <li><a href="/dental-legal/dental-indemnity.html">Dental Indemnity</a></li>
-      <li><a href="/dental-legal/employment-contracts.html">Employment & Associate Contracts</a></li>
-      <li><a href="/dental-legal/regulatory-compliance.html">Regulatory Compliance</a></li>
-    </ul>
-  </li>
-
-  <li><a href="/dental-finance/index.html">Dental Finance</a>
-    <ul>
-      <li><a href="/dental-finance/index.html">Dental Finance Hub</a></li>
-      <li><a href="/dental-finance/practice-loans.html">Practice Loans</a></li>
-      <li><a href="/dental-finance/business-finance.html">Business Finance</a></li>
-      <li><a href="/dental-finance/insurance-tax.html">Insurance & Tax</a></li>
-    </ul>
-  </li>
-
-  <li><a href="/dental-services/index.html">Dental Services</a>
-    <ul>
-      <li><a href="/dental-services/index.html">Dental Services Hub</a></li>
-      <li><a href="/dental-services/saas-software.html">SaaS & Software</a></li>
-      <li><a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a></li>
-      <li><a href="/dental-services/marketing-training.html">Marketing & Training</a></li>
-    </ul>
-  </li>
-
-  <li><a href="/dental-software/index.html">Dental Software</a>
-    <ul>
-      <li><a href="/dental-software/index.html">Dental Software Hub</a></li>
-      <li><a href="#">Software Solutions</a></li>
-      <li><a href="#">Practice Management Tools</a></li>
-    </ul>
-  </li>
-
-  <li><a href="/guides/index.html">Guides & Comparisons</a>
-    <ul>
-      <li><a href="/guides/index.html">Guides & Comparisons Hub</a></li>
-      <li><a href="#">Product Comparisons</a></li>
-      <li><a href="#">Software Guides</a></li>
-    </ul>
-  </li>
-
-  <li><a href="#">Directory</a></li>
-  <li><a href="#">Forum</a></li>
-  <li><a href="/domain-for-sale.html">Domain For Sale</a></li>
-</ul>
-
-  </div>
-</header>
-
-<div class="page-wrapper centered">
+<div class="page-wrapper home">
   <main>
     <section class="hero">
-      <h1>Dental Services Hub</h1>
-      <p>Comprehensive guidance on dental SaaS, CAD/CAM equipment, marketing, and training for UK dental practices.</p>
+      <h1>Dental Services Hub – SaaS, CAD/CAM & Marketing Guidance for UK Dentists</h1>
+      <p>The Dental Services Hub provides comprehensive guidance for UK dental practices on modern software solutions, digital dentistry technology, marketing strategies, and team training. Enhance practice efficiency, patient care, and business growth with expert insights.</p>
     </section>
 
     <section class="content">
-      <h2>Overview</h2>
-      <p>The Dental Services Hub provides insights and practical guidance for dentists and practice owners looking to improve services, adopt new technology, and optimize practice management.</p>
+      <h2>Understanding Dental Services in the UK</h2>
+      <p>Dental services encompass a wide range of solutions that support the operational and clinical success of practices. From adopting the latest software to optimizing workflows and integrating advanced CAD/CAM technology, the right services can make a tangible difference in patient care and business performance. UK dental practices are increasingly adopting technology-driven solutions to streamline administration, improve patient engagement, and enhance clinical outcomes.</p>
+      <p>Independent guidance is crucial for selecting the right services that align with practice objectives, whether you are a small clinic or a multi-practice group. This hub consolidates insights across SaaS, CAD/CAM & lab equipment, and marketing & training, ensuring practice owners make informed decisions for sustainable growth.</p>
 
       <div class="ad-slot">In‑content AdSense placement</div>
 
       <h2>Core Services Areas</h2>
-      <h3>SaaS & Software</h3>
-      <p>Information on dental software solutions for practice management, patient engagement, and digital workflows.</p>
-
-      <h3>CAD/CAM & Lab Equipment</h3>
-      <p>Guidance on modern dental equipment, digital impressions, and in-house lab solutions.</p>
-
-      <h3>Marketing & Training</h3>
-      <p>Support on dental marketing strategies, team training, and professional development for dental staff.</p>
-
-      <div class="ad-slot">Sidebar/Content AdSense</div>
-
-      <h2>Additional Resources</h2>
+      <p>The Dental Services Hub focuses on three primary areas:</p>
       <ul>
         <li><a href="/dental-services/saas-software.html">SaaS & Software</a></li>
-        <li><a href="/dental-services/cad-cam.html">CAD/CAM & Lab Equipment</a></li>
+        <li><a href="/dental-services/cad-cam-lab-equipment.html">CAD/CAM & Lab Equipment</a></li>
         <li><a href="/dental-services/marketing-training.html">Marketing & Training</a></li>
       </ul>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>SaaS & Software</h2>
+      <p>Modern dental practices rely heavily on software solutions to streamline daily operations. Dental SaaS (Software as a Service) solutions enable practice owners and managers to oversee appointments, billing, and patient communications efficiently. Additionally, Electronic Medical Records (EMR) and patient engagement platforms can improve clinical documentation and patient satisfaction.</p>
+      <p>Key software considerations include:</p>
+      <ul>
+        <li>Practice management tools for scheduling, invoicing, and reporting</li>
+        <li>Patient communication systems including automated reminders and portals</li>
+        <li>Integration with accounting, clinical imaging, and lab workflows</li>
+        <li>Cloud-based solutions for secure access and remote management</li>
+      </ul>
+      <p>Choosing the right SaaS solutions ensures that the practice maximizes efficiency while maintaining compliance with GDPR and patient data regulations. Explore more details in our dedicated page: <a href="/dental-services/saas-software.html">SaaS & Software</a>.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>CAD/CAM & Lab Equipment</h2>
+      <p>Digital dentistry technologies, such as CAD/CAM systems, intraoral scanners, and in-house lab equipment, are transforming dental practices. These tools allow practices to deliver high-quality restorations faster and with greater precision. The adoption of CAD/CAM technology improves patient experience and reduces reliance on external labs.</p>
+      <p>Considerations for CAD/CAM investment include:</p>
+      <ul>
+        <li>Equipment costs versus ROI for in-house production</li>
+        <li>Compatibility with existing practice workflows and software</li>
+        <li>Training requirements for clinical and lab staff</li>
+        <li>Maintenance, updates, and technical support</li>
+      </ul>
+      <p>In-house labs can reduce turnaround times, increase control over quality, and enable practices to offer premium services. For comprehensive guidance, see <a href="/dental-services/cad-cam-lab-equipment.html">CAD/CAM & Lab Equipment</a>.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Marketing & Training</h2>
+      <p>Effective marketing and continuous staff development are essential for growth in competitive dental markets. Strategic marketing increases patient acquisition and retention, while training programs ensure staff provide high-quality care consistently.</p>
+      <p>Core marketing and training strategies include:</p>
+      <ul>
+        <li>Optimizing website and social media presence for patient engagement</li>
+        <li>Local SEO strategies and Google Business optimization</li>
+        <li>Team training programs including clinical skills and customer service</li>
+        <li>Continuing Professional Development (CPD) to maintain professional standards</li>
+      </ul>
+      <p>By linking marketing initiatives with training, practices can create a consistent brand experience and improve patient satisfaction. Detailed guidance is available at <a href="/dental-services/marketing-training.html">Marketing & Training</a>.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Integration and Strategic Planning</h2>
+      <p>Dental practices achieve maximum efficiency when software, technology, and marketing strategies are integrated. This includes:</p>
+      <ul>
+        <li>Ensuring SaaS platforms communicate with lab equipment and imaging systems</li>
+        <li>Aligning marketing campaigns with new service offerings enabled by technology</li>
+        <li>Coordinating staff training to match technological adoption and workflow changes</li>
+        <li>Monitoring performance metrics across software, clinical outcomes, and patient engagement</li>
+      </ul>
+      <p>Comprehensive planning ensures that investments in services yield measurable benefits, optimizing both clinical results and practice profitability.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Additional Resources</h2>
+      <p>To support practice growth, the Dental Services Hub provides linked resources to ensure seamless knowledge transfer:</p>
+      <ul>
+        <li><a href="/dental-services/saas-software.html">SaaS & Software</a></li>
+        <li><a href="/dental-services/cad-cam-lab-equipment.html">CAD/CAM & Lab Equipment</a></li>
+        <li><a href="/dental-services/marketing-training.html">Marketing & Training</a></li>
+      </ul>
+      <p>Practices can leverage these resources to make informed investment decisions, streamline workflows, and enhance patient experiences.</p>
+
+      <div class="ad-slot">Future AdSense / Lead placement</div>
+
+      <h2>Independent Guidance for Dentists</h2>
+      <p>DentalLab.co.uk offers independent UK-focused insight to help dental practices navigate software selection, technology investment, marketing, and staff training. By following the guidance in this hub, practices can:</p>
+      <ul>
+        <li>Enhance operational efficiency with integrated SaaS and CAD/CAM solutions</li>
+        <li>Increase patient satisfaction through improved service delivery</li>
+        <li>Develop staff skills and retain high-quality team members</li>
+        <li>Implement marketing strategies that support sustainable practice growth</li>
+      </ul>
+      <p>Our article map ensures consistent information across all services, helping dentists make strategic decisions with confidence.</p>
     </section>
   </main>
-
-  <aside class="sidebar">
-    <div class="ad-slot">Sidebar AdSense placement</div>
-    <div class="ad-slot">Lead Form / CTA placeholder</div>
-  </aside>
 </div>
 
-<footer>
-  <p>
-    <a href="/index.html">Home</a> |
-    <a href="/about/">About</a> |
-    <a href="/contact/">Contact</a> |
-    <a href="/privacy-policy/">Privacy Policy</a> |
-    <a href="/domain-for-sale.html">Domain For Sale</a>
-  </p>
-  <p>DentalLab.co.uk – Expert guidance for UK dentists.</p>
-  <p>© 2025 DentalLab.co.uk</p>
-</footer>
+<div id="footer-placeholder"></div>
 
 <script>
-// Mobile menu toggle
-const menuToggle = document.getElementById('menu-toggle');
-const mainNav = document.getElementById('main-nav');
-
-menuToggle.addEventListener('click', () => {
-  mainNav.style.display = mainNav.style.display === 'flex' ? 'none' : 'flex';
-});
-
-// Mobile submenu toggle
-const navItems = mainNav.querySelectorAll('li > a');
-
-navItems.forEach(item => {
-  item.addEventListener('click', function(e){
-    const submenu = this.nextElementSibling;
-    if(submenu && submenu.tagName === 'UL' && window.innerWidth <= 900){
-      e.preventDefault();
-      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-    }
-  });
-});
+function loadInclude(id,url){
+  fetch(url)
+    .then(r=>r.text())
+    .then(data=>document.getElementById(id).innerHTML=data)
+    .then(()=>{
+      if(id==='header-placeholder'){
+        const menuToggle=document.getElementById('menu-toggle');
+        const mainNav=document.getElementById('main-nav');
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+          const navItems=mainNav.querySelectorAll('li > a');
+          navItems.forEach(item=>{
+            item.addEventListener('click',function(e){
+              const submenu=this.nextElementSibling;
+              if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+                e.preventDefault();
+                submenu.style.display=submenu.style.display==='block'?'none':'block';
+              }
+            });
+          });
+        }
+      }
+    });
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
 </script>
 
 </body>
