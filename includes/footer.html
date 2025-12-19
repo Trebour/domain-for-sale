@@ -1,12 +1,37 @@
 <footer>
+  <script>
+(function(){
+  if(!localStorage.getItem('cookiesAccepted')){
+    document.getElementById('cookie-banner').style.display = 'block';
+  }
+  document.getElementById('accept-cookies')?.addEventListener('click', function(){
+    localStorage.setItem('cookiesAccepted', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+  });
+})();
+</script>
+
   <p>
     <a href="/index.html">Home</a> |
     <a href="/about/">About</a> |
     <a href="/contact/">Contact</a> |
     <a href="/privacy-policy/">Privacy Policy</a> |
+    <a href="/cookie-policy/index.html">Cookie Policy</a> |
     <a href="/terms-and-conditions/">Terms & Conditions</a> |
     <a href="/domain-for-sale.html">Domain For Sale</a>
   </p>
   <p>DentalLab.co.uk – Expert guidance for UK dentists.</p>
   <p>© 2025 DentalLab.co.uk</p>
+  <div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#111; color:#fff; padding:15px; z-index:9999; font-size:14px;">
+  <div style="max-width:1200px; margin:auto; display:flex; flex-wrap:wrap; align-items:center; gap:10px;">
+    <span style="flex:1;">
+      DentalLab.co.uk uses cookies to improve your experience and display relevant advertising.
+      <a href="/cookie-policy/index.html" style="color:#4da3ff;">Learn more</a>.
+    </span>
+    <button id="accept-cookies" style="background:#4da3ff; border:none; padding:8px 14px; cursor:pointer;">
+      Accept
+    </button>
+  </div>
+</div>
+  
 </footer>
