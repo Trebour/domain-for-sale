@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CAD/CAM & Digital Dentistry – Restorative Workflows & Dental Lab Integration | DentalLab.co.uk</title>
+<meta name="description" content="DentalLab.co.uk CAD/CAM & Digital Dentistry Hub provides guidance on dental CAD/CAM software, digital impression systems, lab communication, and digital workflows to improve restorative dentistry efficiency.">
+<meta name="keywords" content="CAD/CAM dental software, digital dentistry, digital impression systems, dental lab integration, restorative workflows, dental CAD/CAM UK, digital dental solutions">
+
+<!-- Shared CSS -->
+<link rel="stylesheet" href="/css/styles.css">
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+
+<body>
+
+<!-- Header Include -->
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper centered">
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>CAD/CAM & Digital Dentistry</h1>
+      <p>Explore CAD/CAM software, digital impression systems, and lab integration solutions for UK dental practices. Improve restorative workflows, accuracy, and patient outcomes with modern digital dentistry tools.</p>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+      <h2>Overview of CAD/CAM & Digital Dentistry</h2>
+      <p>CAD/CAM (Computer-Aided Design and Manufacturing) software and digital dentistry tools have transformed modern dental practice. They allow dentists and technicians to design, fabricate, and deliver high-quality restorations efficiently. From digital impressions to seamless lab integration, these technologies improve accuracy, reduce turnaround times, and enhance patient satisfaction.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Key Features of CAD/CAM Dental Software</h2>
+      <ul>
+        <li><strong>Digital Impression Systems:</strong> High-precision scanners for intraoral and extraoral impressions, reducing manual errors.</li>
+        <li><strong>Restorative Design Software:</strong> Tools for crowns, bridges, inlays, and veneers with precise design capabilities.</li>
+        <li><strong>Lab Integration:</strong> Seamless communication with dental labs for fabrication and delivery of restorations.</li>
+        <li><strong>3D Printing & Milling Integration:</strong> Direct output to milling machines or 3D printers for efficient restorative workflows.</li>
+        <li><strong>Patient Visualization:</strong> Show patients realistic previews of planned treatments for enhanced communication and consent.</li>
+      </ul>
+
+      <h2>Benefits of Digital Dentistry</h2>
+      <p>Digital dentistry brings measurable benefits for dental practices:</p>
+      <ul>
+        <li>Improved accuracy and fit of restorations</li>
+        <li>Reduced chairside and lab turnaround time</li>
+        <li>Better collaboration with dental labs and technicians</li>
+        <li>Enhanced patient experience through visualization and predictability</li>
+        <li>Streamlined workflow and reduced material waste</li>
+      </ul>
+
+      <div class="ad-slot">Sidebar/Content AdSense</div>
+
+      <h2>Choosing the Right CAD/CAM Solution</h2>
+      <p>Factors to consider when selecting a CAD/CAM or digital dentistry system:</p>
+      <ul>
+        <li>Compatibility with existing practice management and imaging software</li>
+        <li>Accuracy and speed of scanners and milling/printing systems</li>
+        <li>User-friendly interface for clinical and lab staff</li>
+        <li>Support, training, and software updates</li>
+        <li>Cost-effectiveness, scalability, and return on investment</li>
+      </ul>
+
+      <h2>Additional Resources</h2>
+      <ul>
+        <li><a href="/dental-software/software-solutions.html">Software Solutions</a></li>
+        <li><a href="/dental-software/practice-management.html">Practice Management Tools</a></li>
+        <li><a href="/dental-software/patient-engagement.html">Patient Engagement & Telehealth</a></li>
+      </ul>
+
+    </section>
+
+    <!-- Mini Articles Section -->
+    <section class="content">
+      <h2>Mini Articles</h2>
+
+      <article>
+        <h3>Top CAD/CAM Systems for UK Dentists in 2025</h3>
+        <p>We review leading CAD/CAM platforms for dental clinics, highlighting precision, speed, lab integration, and digital workflow optimization.</p>
+      </article>
+
+      <article>
+        <h3>Digital Impression Systems: Accuracy and Efficiency</h3>
+        <p>Explore intraoral scanners and impression tools that reduce errors, enhance patient comfort, and integrate seamlessly with restorative workflows.</p>
+      </article>
+
+      <article>
+        <h3>3D Printing and Milling in Modern Dentistry</h3>
+        <p>Learn how dental practices are using 3D printing and milling technology to fabricate crowns, bridges, and dentures faster and more accurately.</p>
+      </article>
+
+      <article>
+        <h3>Lab Communication & Integration Best Practices</h3>
+        <p>Tips for ensuring smooth collaboration between dental practices and labs using digital dentistry software and communication protocols.</p>
+      </article>
+
+    </section>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="ad-slot">Sidebar AdSense placement</div>
+    <div class="ad-slot">Affiliate / CTA placeholder</div>
+  </aside>
+</div>
+
+<!-- Footer Include -->
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(res => res.text())
+    .then(html => document.getElementById(id).innerHTML = html)
+    .then(() => {
+      if(id==='header-placeholder'){
+        const menuToggle=document.getElementById('menu-toggle');
+        const mainNav=document.getElementById('main-nav');
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+          const navItems=mainNav.querySelectorAll('li > a');
+          navItems.forEach(item=>{
+            item.addEventListener('click',function(e){
+              const submenu=this.nextElementSibling;
+              if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+                e.preventDefault();
+                submenu.style.display=submenu.style.display==='block'?'none':'block';
+              }
+            });
+          });
+        }
+      }
+    });
+}
+
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+
+</body>
+</html>
