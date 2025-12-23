@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dental Software Guides – Practice Management, CAD/CAM & Digital Workflows | DentalLab.co.uk</title>
+<meta name="description" content="DentalLab.co.uk provides comprehensive software guides for UK dental practices, covering practice management, CAD/CAM, digital workflows, and patient engagement platforms to improve clinic efficiency.">
+<meta name="keywords" content="dental software guides, dental practice management software, CAD/CAM workflows, digital dentistry tools, patient engagement software, UK dental software, dental EMR, dental digital solutions">
+
+<!-- Shared CSS -->
+<link rel="stylesheet" href="/css/styles.css">
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+
+<body>
+
+<!-- Header Include -->
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper centered">
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Dental Software Guides</h1>
+      <p>Step-by-step guides and practical insights on dental software for UK practices, including practice management systems, CAD/CAM workflows, patient engagement platforms, and digital tools to enhance efficiency and compliance.</p>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+      <h2>Overview of Dental Software Guides</h2>
+      <p>Our guides help dental professionals navigate software options, understand workflows, and optimize technology adoption. Whether you’re evaluating EMR platforms, CAD/CAM tools, or patient engagement software, these guides provide clear instructions, practical tips, and comparison insights to make informed decisions.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Core Software Areas</h2>
+
+      <h3>Practice Management Software</h3>
+      <p>Learn how to use practice management systems effectively, from scheduling and billing to compliance and reporting. Our step-by-step guides cover UK-specific regulatory requirements and tips for smoother staff adoption.</p>
+
+      <h3>CAD/CAM & Digital Dentistry</h3>
+      <p>Detailed guides for digital dentistry, including CAD/CAM workflows, impression scanning, and lab integration. Optimize restorative procedures and reduce turnaround times with actionable workflows and software tips.</p>
+
+      <h3>Patient Engagement Tools</h3>
+      <p>Discover how patient engagement platforms improve communication, telehealth consultations, automated reminders, and online booking. Our guides show practical ways to increase patient satisfaction and reduce missed appointments.</p>
+
+      <h3>Data Security & Compliance</h3>
+      <p>Step-by-step guidance for safeguarding patient data and ensuring GDPR compliance. Learn how to securely store, share, and manage records across software platforms.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Mini Articles</h2>
+      
+      <article>
+        <h3>Top Dental Software Platforms for UK Practices</h3>
+        <p>Insights into leading dental software platforms, including features, pricing, integration, and usability considerations.</p>
+      </article>
+
+      <article>
+        <h3>Optimizing CAD/CAM Workflows in Clinics</h3>
+        <p>Practical tips for integrating CAD/CAM systems with practice workflows to improve accuracy, efficiency, and lab collaboration.</p>
+      </article>
+
+      <article>
+        <h3>Patient Engagement Software Best Practices</h3>
+        <p>Maximizing patient communication, appointment adherence, and telehealth solutions with practical software guidance.</p>
+      </article>
+
+      <article>
+        <h3>Choosing the Right Dental Software for Your Practice</h3>
+        <p>Step-by-step guide to evaluating software based on features, integration, compliance, support, and scalability.</p>
+      </article>
+
+    </section>
+
+  </main>
+</div>
+
+<!-- Footer Include -->
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(res => res.text())
+    .then(html => document.getElementById(id).innerHTML = html)
+    .then(() => {
+      if(id==='header-placeholder'){
+        const menuToggle=document.getElementById('menu-toggle');
+        const mainNav=document.getElementById('main-nav');
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+          const navItems=mainNav.querySelectorAll('li > a');
+          navItems.forEach(item=>{
+            item.addEventListener('click',function(e){
+              const submenu=this.nextElementSibling;
+              if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+                e.preventDefault();
+                submenu.style.display=submenu.style.display==='block'?'none':'block';
+              }
+            });
+          });
+        }
+      }
+    });
+}
+
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+
+</body>
+</html>
