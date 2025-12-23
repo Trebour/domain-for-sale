@@ -1,6 +1,6 @@
 /* --------------------- BODY --------------------- */
 body {
-  margin:0;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: #f5f7fa;
   color: #1f2a44;
@@ -31,8 +31,8 @@ header .logo {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav li {
@@ -51,13 +51,15 @@ header .logo {
   display: block;
 }
 
-.main-nav a:hover { color: #ffeb3b; }
+.main-nav a:hover {
+  color: #ffeb3b;
+}
 
 .main-nav li ul {
   display: none;
   position: absolute;
   top: 100%;
-  left:0;
+  left: 0;
   background: white;
   color: #1f2a44;
   min-width: 200px;
@@ -66,58 +68,82 @@ header .logo {
   z-index: 999;
 }
 
-.main-nav li ul li a { color: #1f2a44; padding: 10px 15px; }
-.main-nav li ul li a:hover { background: #f0f6ff; color: #3da2ff; }
+.main-nav li ul li a {
+  color: #1f2a44;
+  padding: 10px 15px;
+}
+
+.main-nav li ul li a:hover {
+  background: #f0f6ff;
+  color: #3da2ff;
+}
 
 @media(min-width: 901px){
-  .main-nav li:hover > ul { display: block; }
+  .main-nav li:hover > ul {
+    display: block;
+  }
 }
 
 /* --------------------- PAGE WRAPPER --------------------- */
-.page-wrapper { max-width: 1200px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: 3fr 1fr; gap: 40px; }
+.page-wrapper {
+  max-width: 900px;       /* single-column by default */
+  margin: 40px auto;
+  padding: 0 20px;
+  display: block;
+}
 
-.page-wrapper.home { display: block; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+/* Optional grid layout for pages with sidebar */
+.page-wrapper.sidebar-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+}
 
+/* --------------------- HERO --------------------- */
 .hero {
   background: #ffffff;
   padding: 50px;
   border-radius: 8px;
-  border:1px solid #d6dce8;
-  margin-bottom:40px;
+  border: 1px solid #d6dce8;
+  margin-bottom: 40px;
 }
 
-h1 { margin-top:0; font-size:38px; }
-h2 { margin-top:40px; font-size:26px; }
-h3 { margin-top:30px; font-size:20px; }
+/* --------------------- HEADINGS --------------------- */
+h1 { margin-top: 0; font-size: 38px; }
+h2 { margin-top: 40px; font-size: 26px; }
+h3 { margin-top: 30px; font-size: 20px; }
 
+/* --------------------- CONTENT --------------------- */
 .content {
   background: #ffffff;
-  padding:40px;
+  padding: 40px;
   border-radius: 8px;
-  border:1px solid #d6dce8;
+  border: 1px solid #d6dce8;
 }
 
+/* --------------------- AD SLOT --------------------- */
 .ad-slot {
   background: #eef2f8;
-  border:1px dashed #b9c4d8;
-  padding:20px;
-  margin-bottom:30px;
-  text-align:center;
-  font-size:14px;
-  color:#4b5e82;
+  border: 1px dashed #b9c4d8;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #4b5e82;
 }
 
 /* --------------------- FOOTER --------------------- */
 footer {
   background: #ffffff;
-  border-top:1px solid #d6dce8;
-  padding:40px 20px;
-  text-align:center;
-  font-size:14px;
-  color:#4b5e82;
+  border-top: 1px solid #d6dce8;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #4b5e82;
 }
 
-footer a { color:#4b5e82; margin:0 10px; }
+footer a { color: #4b5e82; margin: 0 10px; }
 
 /* --------------------- MOBILE MENU --------------------- */
 .menu-toggle {
@@ -127,18 +153,43 @@ footer a { color:#4b5e82; margin:0 10px; }
 }
 
 .menu-toggle span {
-  height:3px;
-  width:25px;
-  background:white;
-  margin-bottom:5px;
-  border-radius:3px;
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin-bottom: 5px;
+  border-radius: 3px;
 }
 
 @media(max-width:900px){
-  header .logo { text-align:center; width:100%; margin-bottom:10px; }
-  .nav-wrapper { flex-direction: column; align-items: flex-end; }
-  .menu-toggle { display:flex; margin-bottom:10px; }
-  .main-nav { flex-direction: column; width: auto; display: none; align-items: flex-end; }
-  .main-nav li { margin-left:0; width: 100%; }
-  .main-nav li ul { position: relative; }
+  header .logo {
+    text-align:center;
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menu-toggle {
+    display:flex;
+    margin-bottom:10px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    align-items: flex-end;
+  }
+
+  .main-nav li {
+    margin-left:0;
+    width: 100%;
+  }
+
+  .main-nav li ul {
+    position: relative;
+  }
 }
