@@ -9,204 +9,89 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Dental Legal -->
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-legal/index.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-legal/dental-negligence.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-legal/gdc-investigations.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-legal/dental-indemnity.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-legal/employment-contracts.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-legal/regulatory-compliance.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- Dental Legal Hub and Articles -->
+  <url><loc>https://www.dentallab.co.uk/dental-legal/index.html</loc><lastmod>2025-12-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-legal/dental-negligence.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-legal/dental-negligence-case-studies.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-legal/gdc-investigations.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-legal/gdc-investigations-faqs.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-legal/dental-indemnity.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-legal/clinical-record-keeping.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-legal/complaints-escalation-gdc.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-legal/employment-contracts.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-legal/raising-managing-serious-incidents.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-legal/responding-to-patient-complaints.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-legal/regulatory-compliance.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <!-- Dental Finance -->
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-finance/index.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-finance/practice-loans.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-finance/business-finance.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-finance/insurance-tax.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- Dental Finance Hub and Articles -->
+  <url><loc>https://www.dentallab.co.uk/dental-finance/index.html</loc><lastmod>2025-12-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/practice-loans.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/practice-loans-overview.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/business-finance.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/business-finance-guidance.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/cad-cam-lab-equipment-investment.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/cash-flow-management.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/dental-equipment-finance.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/insurance-case-studies.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/insurance-tax.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/insurance-tax-overview.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/loan-structures-repayment.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/practice-acquisition-finance.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/professional-indemnity.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/refurbishment-expansion-loans.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/tax-efficiency-tips.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-finance/working-capital-strategies.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Dental Services -->
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-services/index.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-services/saas-software.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-services/cad-cam-lab-equipment.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-services/marketing-training.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- Dental Services and Subfolders -->
+  <url><loc>https://www.dentallab.co.uk/dental-services/index.html</loc><lastmod>2025-12-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  
+  <!-- CAD/CAM -->
+  <url><loc>https://www.dentallab.co.uk/dental-services/cad-cam-lab-equipment.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-services/cad-cam/introduction-cad-cam.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-services/cad-cam/cost-roi-analysis.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-services/cad-cam/digital-impressions.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-services/cad-cam/in-house-lab-equipment.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Dental Software -->
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-software/index.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-software/software-solutions.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-software/practice-management.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-software/cad-cam.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/dental-software/patient-engagement.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- Marketing -->
+  <url><loc>https://www.dentallab.co.uk/dental-services/marketing-training.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-services/marketing/dental-marketing-strategies.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-services/marketing/local-seo-for-dentists.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- SaaS -->
+  <url><loc>https://www.dentallab.co.uk/dental-services/saas-software.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-services/saas/analytics-reporting-tools.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-services/saas/appointment-management.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-services/saas/choosing-practice-software.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-services/saas/patient-engagement-tools.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Training -->
+  <url><loc>https://www.dentallab.co.uk/dental-services/training/dental-staff-training-programmes.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-services/training/patient-communication-skills.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Dental Software Hub and Subpages -->
+  <url><loc>https://www.dentallab.co.uk/dental-software/index.html</loc><lastmod>2025-12-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-software/software-solutions.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-software/practice-management.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-software/cad-cam.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/dental-software/patient-engagement.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Guides & Comparisons -->
-  <url>
-    <loc>https://www.dentallab.co.uk/guides/index.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/guides/product-comparisons.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/guides/software-guides.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/guides/technology-trends.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://www.dentallab.co.uk/guides/index.html</loc><lastmod>2025-12-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.dentallab.co.uk/guides/product-comparisons.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/guides/software-guides.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dentallab.co.uk/guides/technology-trends.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Directory, Forum, Domain -->
-  <url>
-    <loc>https://www.dentallab.co.uk/directory/index.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/forum/index.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/domain-for-sale.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+  <url><loc>https://www.dentallab.co.uk/directory/index.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/forum/index.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dentallab.co.uk/domain-for-sale.html</loc><lastmod>2025-12-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 
   <!-- Footer / Legal Pages -->
-  <url>
-    <loc>https://www.dentallab.co.uk/about/</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/contact/</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/privacy-policy/</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/cookie-policy/index.html</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.dentallab.co.uk/terms-and-conditions/</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
+  <url><loc>https://www.dentallab.co.uk/about/</loc><lastmod>2025-12-23</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.dentallab.co.uk/contact/</loc><lastmod>2025-12-23</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.dentallab.co.uk/privacy-policy/</loc><lastmod>2025-12-23</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.dentallab.co.uk/cookie-policy/index.html</loc><lastmod>2025-12-23</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.dentallab.co.uk/terms-and-conditions/</loc><lastmod>2025-12-23</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
 
 </urlset>
+
