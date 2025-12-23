@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equipment & Tools Reviews – CAD/CAM, Imaging & Lab Devices | DentalLab.co.uk</title>
+<meta name="description" content="Independent reviews of dental CAD/CAM machines, 3D printers, imaging devices, and lab tools to help UK dental practices make informed investment decisions.">
+<meta name="keywords" content="dental equipment reviews, CAD/CAM reviews, 3D printer reviews, dental imaging devices, lab tools, UK dental practice equipment">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+
+<body>
+
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper centered">
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Equipment & Tools Reviews</h1>
+      <p>Comprehensive, independent reviews of dental CAD/CAM machines, 3D printers, imaging devices, and lab equipment for UK dental practices to make smart investment decisions.</p>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+      <h2>Overview</h2>
+      <p>Our reviews cover the latest dental technology, highlighting performance, accuracy, ease of use, integration, and ROI. Whether you are upgrading imaging systems, purchasing CAD/CAM machines, or evaluating 3D printing solutions, these guides help you choose wisely.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>CAD/CAM Machines</h2>
+      <p>Compare popular CAD/CAM machines for speed, accuracy, software integration, and lab workflow compatibility.</p>
+
+      <h2>3D Printers for Dentistry</h2>
+      <p>Detailed reviews of dental 3D printers for models, surgical guides, and prosthetics with cost vs performance analysis.</p>
+
+      <h2>Imaging Devices</h2>
+      <p>Evaluate CBCT scanners, intraoral scanners, and digital radiography systems to improve diagnostics and treatment planning.</p>
+
+      <h2>Lab Tools & Accessories</h2>
+      <p>Independent insights into dental lab tools, milling machines, and ancillary equipment for efficient restorative workflows.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Investment Considerations</h2>
+      <p>Factors to consider before purchasing high-value dental equipment: cost, training, integration, support, and ROI projections.</p>
+
+      <h2>Upcoming Reviews</h2>
+      <ul>
+        <li>Next-generation CAD/CAM machines</li>
+        <li>Advanced intraoral scanners</li>
+        <li>Emerging lab automation tools</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(res => res.text())
+    .then(html => document.getElementById(id).innerHTML = html)
+    .then(() => {
+      if(id==='header-placeholder'){
+        const menuToggle=document.getElementById('menu-toggle');
+        const mainNav=document.getElementById('main-nav');
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+          const navItems=mainNav.querySelectorAll('li > a');
+          navItems.forEach(item=>{
+            item.addEventListener('click',function(e){
+              const submenu=this.nextElementSibling;
+              if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+                e.preventDefault();
+                submenu.style.display=submenu.style.display==='block'?'none':'block';
+              }
+            });
+          });
+        }
+      }
+    });
+}
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+
+</body>
+</html>
