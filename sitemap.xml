@@ -360,5 +360,59 @@
     <loc>https://www.dentallab.co.uk/guides/technology-trends.html</loc>
     <lastmod>2025-12-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8
+    <priority>0.8</priority>
+  </url>
 
+  <!-- Directory, Forum, Domain -->
+  <url>
+    <loc>https://www.dentallab.co.uk/directory/index.html</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dentallab.co.uk/forum/index.html</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dentallab.co.uk/domain-for-sale.html</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Footer / Legal Pages -->
+  <url>
+    <loc>https://www.dentallab.co.uk/about/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.dentallab.co.uk/contact/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.dentallab.co.uk/privacy-policy/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.dentallab.co.uk/cookie-policy/index.html</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.dentallab.co.uk/terms-and-conditions/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
