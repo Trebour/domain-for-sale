@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Patient Engagement & Telehealth – Dental Software for UK Clinics | DentalLab.co.uk</title>
+<meta name="description" content="DentalLab.co.uk Patient Engagement & Telehealth Hub provides guidance on dental software for patient communication, online consultations, remote care, and digital engagement tools for UK dental practices.">
+<meta name="keywords" content="dental patient engagement software, teledentistry UK, online dental consultations, digital patient communication, remote dental care, dental software UK, patient management tools">
+
+<!-- Shared CSS -->
+<link rel="stylesheet" href="/css/styles.css">
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-9100517449326376" crossorigin="anonymous"></script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ05YBGCP3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date());
+gtag('config', 'G-KZ05YBGCP3');
+</script>
+</head>
+
+<body>
+
+<!-- Header Include -->
+<div id="header-placeholder"></div>
+
+<div class="page-wrapper centered">
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Patient Engagement & Telehealth</h1>
+      <p>Explore dental software solutions that improve patient engagement, enable online consultations, and support remote care for UK dental practices. Enhance communication, appointment management, and overall patient experience with digital tools.</p>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+      <h2>Overview</h2>
+      <p>Patient engagement and telehealth software are transforming how dental practices interact with patients. From online booking systems and automated reminders to video consultations and digital education, these tools enhance accessibility, satisfaction, and clinical efficiency. Practices adopting these solutions can reduce missed appointments, improve communication, and offer remote care where appropriate.</p>
+
+      <div class="ad-slot">In‑content AdSense placement</div>
+
+      <h2>Core Features of Patient Engagement Tools</h2>
+      <ul>
+        <li><strong>Online Appointment Scheduling:</strong> Simplify bookings with web and mobile platforms, automated confirmations, and reminders.</li>
+        <li><strong>Teleconsultation Platforms:</strong> Secure video consultations for remote diagnosis, follow-ups, and triage.</li>
+        <li><strong>Patient Communication:</strong> SMS/email notifications, recall reminders, treatment plan updates, and educational content delivery.</li>
+        <li><strong>Digital Consent & Records:</strong> Collect consents, complete forms electronically, and integrate with patient records.</li>
+        <li><strong>Feedback & Surveys:</strong> Tools to collect patient feedback, monitor satisfaction, and identify areas for improvement.</li>
+      </ul>
+
+      <h2>Benefits for Dental Practices</h2>
+      <p>Using patient engagement and telehealth software offers multiple advantages:</p>
+      <ul>
+        <li>Reduced missed appointments and improved clinic efficiency</li>
+        <li>Enhanced patient experience and communication</li>
+        <li>Support for remote care and triage</li>
+        <li>Integration with practice management systems for seamless workflows</li>
+        <li>Improved treatment compliance and patient education</li>
+      </ul>
+
+      <div class="ad-slot">Sidebar/Content AdSense</div>
+
+      <h2>Choosing the Right Engagement & Telehealth Software</h2>
+      <p>Consider these factors when selecting software:</p>
+      <ul>
+        <li>Secure and GDPR-compliant platforms for patient communication</li>
+        <li>User-friendly interface for patients and staff</li>
+        <li>Integration with existing practice management and clinical systems</li>
+        <li>Scalability for practice growth and multi-location clinics</li>
+        <li>Availability of reporting and analytics for patient engagement metrics</li>
+      </ul>
+
+      <h2>Additional Resources</h2>
+      <ul>
+        <li><a href="/dental-software/software-solutions.html">Software Solutions</a></li>
+        <li><a href="/dental-software/practice-management.html">Practice Management Tools</a></li>
+        <li><a href="/dental-software/cad-cam-imaging.html">CAD/CAM & Digital Dentistry</a></li>
+      </ul>
+
+    </section>
+
+    <!-- Mini Articles Section -->
+    <section class="content">
+      <h2>Mini Articles</h2>
+
+      <article>
+        <h3>Top Patient Engagement Software for Dentists</h3>
+        <p>We review leading platforms for online booking, patient communication, digital consent, and treatment reminders for UK dental practices.</p>
+      </article>
+
+      <article>
+        <h3>Teledentistry: Remote Consultations and Care</h3>
+        <p>Discover how telehealth solutions enable video consultations, triage, and follow-up care to expand access and improve patient convenience.</p>
+      </article>
+
+      <article>
+        <h3>Enhancing Patient Communication and Education</h3>
+        <p>Learn how digital tools help deliver educational content, treatment plans, and reminders, improving adherence and satisfaction.</p>
+      </article>
+
+      <article>
+        <h3>Integrating Engagement Tools with Practice Management</h3>
+        <p>Tips for seamless integration of patient engagement software with your existing practice management system for workflow efficiency.</p>
+      </article>
+
+    </section>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="ad-slot">Sidebar AdSense placement</div>
+    <div class="ad-slot">Affiliate / CTA placeholder</div>
+  </aside>
+</div>
+
+<!-- Footer Include -->
+<div id="footer-placeholder"></div>
+
+<script>
+function loadInclude(id,url){
+  fetch(url)
+    .then(res => res.text())
+    .then(html => document.getElementById(id).innerHTML = html)
+    .then(() => {
+      if(id==='header-placeholder'){
+        const menuToggle=document.getElementById('menu-toggle');
+        const mainNav=document.getElementById('main-nav');
+        if(menuToggle && mainNav){
+          menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+          const navItems=mainNav.querySelectorAll('li > a');
+          navItems.forEach(item=>{
+            item.addEventListener('click',function(e){
+              const submenu=this.nextElementSibling;
+              if(submenu && submenu.tagName==='UL' && window.innerWidth<=900){
+                e.preventDefault();
+                submenu.style.display=submenu.style.display==='block'?'none':'block';
+              }
+            });
+          });
+        }
+      }
+    });
+}
+
+loadInclude('header-placeholder','/includes/header.html');
+loadInclude('footer-placeholder','/includes/footer.html');
+</script>
+
+</body>
+</html>
