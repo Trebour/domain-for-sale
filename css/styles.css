@@ -188,7 +188,20 @@ footer a { color: #4b5e82; margin: 0 10px; }
     margin-left:0;
     width: 100%;
   }
+  .buy-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
 
+.buy-button:hover {
+  background-color: #005fa3;
+}
   .main-nav li ul {
     position: relative;
   }
