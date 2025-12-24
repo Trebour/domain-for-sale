@@ -253,24 +253,40 @@ gtag('config', 'G-KZ05YBGCP3');
 <div id="footer-placeholder"></div>
 
 <script>
-function loadInclude(id,url){
+function loadInclude(id, url){
   fetch(url)
-    .then(r=>r.text())
-    .then(data=>document.getElementById(id).innerHTML=data)
-    .then(()=>{
-      if(id==='header-placeholder'){
-        const menuToggle=document.getElementById('menu-toggle');
-        const mainNav=document.getElementById('main-nav');
+    .then(response => response.text())
+    .then(data => document.getElementById(id).innerHTML = data)
+    .then(() => {
+      if(id === 'header-placeholder'){
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
         if(menuToggle && mainNav){
-          menuToggle.addEventListener('click',()=>{
-            mainNav.style.display = mainNav.style.display==='flex' ? 'none' : 'flex';
+          // Mobile menu toggle
+          menuToggle.addEventListener('click', () => {
+            mainNav.style.display = mainNav.style.display === 'flex' ? 'none' : 'flex';
+          });
+
+          // Submenu toggle for mobile
+          const navItems = mainNav.querySelectorAll('li > a');
+          navItems.forEach(item => {
+            item.addEventListener('click', function(e){
+              const submenu = this.nextElementSibling;
+              if(submenu && submenu.tagName === 'UL' && window.innerWidth <= 900){
+                e.preventDefault();
+                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+              }
+            });
           });
         }
       }
     });
 }
+
 loadInclude('header-placeholder','/includes/header.html');
 loadInclude('footer-placeholder','/includes/footer.html');
+
 </script>
 
 </body>
