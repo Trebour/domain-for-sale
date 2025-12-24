@@ -4,9 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dental Directory – UK Dental Suppliers & Services | DentalLab.co.uk</title>
-<meta name="description" content="The DentalLab.co.uk directory will list trusted UK dental suppliers, labs, finance providers, and professional services. Coming soon.">
-<meta name="keywords" content="dental directory UK, dental suppliers, dental labs UK, dental finance providers">
+<title>UK Dental Industry Directory | Dental Suppliers, Labs & Services</title>
+
+<meta name="description" content="Browse the UK dental industry directory from DentalLab.co.uk. Discover dental laboratories, milling centres, software providers, equipment suppliers, and training organisations across the UK.">
+
+<meta name="keywords" content="uk dental directory, dental industry directory uk, dental suppliers uk, dental laboratories uk, dental milling centres uk, dental software providers uk, dental equipment suppliers uk, dental training providers uk">
 
 <link rel="stylesheet" href="/css/styles.css">
 
@@ -26,6 +28,7 @@ gtag('config', 'G-KZ05YBGCP3');
 
 <div class="page-wrapper home">
   <main>
+
 <!-- Hero Section -->
 <section class="hero">
   <h1>UK Dental Industry Directory</h1>
@@ -124,9 +127,6 @@ gtag('config', 'G-KZ05YBGCP3');
     providers efficiently.
   </p>
 
-  <p>
-    Each category page may include:
-  </p>
   <ul>
     <li>Company name and business focus</li>
     <li>Website link</li>
@@ -183,7 +183,10 @@ function loadInclude(id,url){
         const menuToggle=document.getElementById('menu-toggle');
         const mainNav=document.getElementById('main-nav');
         if(menuToggle && mainNav){
-          menuToggle.addEventListener('click',()=>{mainNav.style.display=mainNav.style.display==='flex'?'none':'flex';});
+          menuToggle.addEventListener('click',()=>{
+            mainNav.style.display =
+              mainNav.style.display === 'flex' ? 'none' : 'flex';
+          });
         }
       }
     });
