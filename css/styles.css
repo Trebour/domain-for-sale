@@ -205,4 +205,24 @@ footer a { color: #4b5e82; margin: 0 10px; }
   .main-nav li ul {
     position: relative;
   }
+  .ad-slot {
+  width: 100%;
+  max-width: 100%;
+  margin: 24px 0;
+  overflow: hidden;        /* prevents breakout */
+}
+
+.ad-inner {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center; /* centres large ads safely */
+}
+
+.ad-slot ins,
+.ad-slot iframe {
+  max-width: 100% !important;
+  height: auto;
+}
+
 }
